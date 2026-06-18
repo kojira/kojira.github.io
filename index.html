@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>kojira — projects timeline</title>
+  <meta name="description" content="A timeline of kojira's public repositories — Nostr & Bluesky services, tools, and experiments, newest first." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="kojira — projects timeline" />
+  <meta property="og:description" content="A timeline of kojira's public repositories — Nostr & Bluesky services, tools, and experiments." />
+  <meta property="og:url" content="https://kojira.github.io/" />
+  <meta name="twitter:card" content="summary" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <h1 class="logo">kojira</h1>
+    <p class="tagline">Public repositories — a timeline of things I've built.</p>
+    <div id="summary" class="summary"></div>
+    <div class="links">
+      <a href="https://github.com/kojira" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+    <div class="scroll-hint" aria-hidden="true">
+      <span>newest</span>
+      <span class="arrow">↓</span>
+      <span>scroll back in time</span>
+    </div>
+  </header>
+
+  <main>
+    <div id="timeline" class="timeline"></div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Built with vanilla HTML/CSS/JS · data from the GitHub API ·
+      <a href="https://github.com/kojira/kojira.github.io" target="_blank" rel="noopener">source</a>
+    </p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
