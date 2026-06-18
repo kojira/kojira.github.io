@@ -47,12 +47,16 @@ function render() {
 
     const side = idx % 2 === 0 ? "left" : "right";
     const alt = idx % 2 === 1 ? " alt" : "";
+    // org repos are stored as "owner/name" — show an org badge + the repo name
+    const slash = r.name.indexOf("/");
+    const org = slash > -1 ? r.name.slice(0, slash) : null;
+    const repoName = slash > -1 ? r.name.slice(slash + 1) : r.name;
     const item = document.createElement("div");
     item.className = `item ${side} reveal${alt}`;
     item.innerHTML = `
       <article class="card">
         <div class="date">${fmtDate(r.date)}</div>
-        <h3><a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.name)}</a></h3>
+        <h3>${org ? `<span class="org">${esc(org)}</span>` : ""}<a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(repoName)}</a></h3>
         ${r.description ? `<p class="desc">${esc(r.description)}</p>` : ""}
         <div class="meta">${metaRow(r)}</div>
       </article>`;

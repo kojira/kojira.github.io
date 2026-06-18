@@ -70,23 +70,13 @@ window.REPOS = [
     "live": null
   },
   {
-    "name": "moonshine-stt",
-    "description": "Moonshine STT WebSocket server with Japanese support",
-    "date": "2026-02-25",
-    "stars": 0,
-    "commits": 2,
-    "lang": "Python",
-    "url": "https://github.com/kojira/moonshine-stt",
-    "live": null
-  },
-  {
-    "name": "mosh-proxy",
-    "description": "SSH ProxyCommand daemon for mosh - enables Cursor/VS Code Remote via mosh",
+    "name": "mosh-wasm",
+    "description": "Rust/WASM implementation of mosh (Mobile Shell) transport for VS Code Remote-Mosh",
     "date": "2026-02-21",
     "stars": 0,
-    "commits": 1,
+    "commits": 7,
     "lang": "Rust",
-    "url": "https://github.com/kojira/mosh-proxy",
+    "url": "https://github.com/kojira/mosh-wasm",
     "live": null
   },
   {
@@ -97,16 +87,6 @@ window.REPOS = [
     "commits": 8,
     "lang": "TypeScript",
     "url": "https://github.com/kojira/vscode-remote-mosh",
-    "live": null
-  },
-  {
-    "name": "mosh-wasm",
-    "description": "Rust/WASM implementation of mosh (Mobile Shell) transport for VS Code Remote-Mosh",
-    "date": "2026-02-21",
-    "stars": 0,
-    "commits": 7,
-    "lang": "Rust",
-    "url": "https://github.com/kojira/mosh-wasm",
     "live": null
   },
   {
@@ -240,16 +220,6 @@ window.REPOS = [
     "live": null
   },
   {
-    "name": "discordon",
-    "description": null,
-    "date": "2023-06-18",
-    "stars": 2,
-    "commits": 1,
-    "lang": null,
-    "url": "https://github.com/kojira/discordon",
-    "live": null
-  },
-  {
     "name": "bluesky-chan",
     "description": null,
     "date": "2023-05-19",
@@ -284,7 +254,7 @@ window.REPOS = [
     "description": null,
     "date": "2023-02-23",
     "stars": 1,
-    "commits": 1172,
+    "commits": 1173,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/kojira",
     "live": null
@@ -327,16 +297,6 @@ window.REPOS = [
     "commits": 6,
     "lang": "Java",
     "url": "https://github.com/kojira/excellent-ball",
-    "live": null
-  },
-  {
-    "name": "bs-android-hackathon-01",
-    "description": "bs-android-hackathon-01",
-    "date": "2010-10-06",
-    "stars": 0,
-    "commits": 2,
-    "lang": null,
-    "url": "https://github.com/kojira/bs-android-hackathon-01",
     "live": null
   }
 ]
