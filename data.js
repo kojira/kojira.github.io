@@ -40,6 +40,56 @@ window.REPOS = [
     "live": null
   },
   {
+    "name": "nostr-haijin-checker",
+    "description": null,
+    "date": "2026-06-08",
+    "stars": 0,
+    "commits": 22,
+    "lang": "TypeScript",
+    "url": "https://github.com/kojira/nostr-haijin-checker",
+    "live": null
+  },
+  {
+    "name": "428lab/events",
+    "description": null,
+    "date": "2026-05-30",
+    "stars": 0,
+    "commits": 52,
+    "lang": "TypeScript",
+    "url": "https://github.com/428lab/events",
+    "live": null
+  },
+  {
+    "name": "omoikane",
+    "description": null,
+    "date": "2026-05-12",
+    "stars": 0,
+    "commits": 112,
+    "lang": "Go",
+    "url": "https://github.com/kojira/omoikane",
+    "live": null
+  },
+  {
+    "name": "tmoe",
+    "description": null,
+    "date": "2026-05-06",
+    "stars": 0,
+    "commits": 81,
+    "lang": "Rust",
+    "url": "https://github.com/kojira/tmoe",
+    "live": null
+  },
+  {
+    "name": "aozoraquest",
+    "description": null,
+    "date": "2026-04-21",
+    "stars": 0,
+    "commits": 474,
+    "lang": "TypeScript",
+    "url": "https://github.com/kojira/aozoraquest",
+    "live": null
+  },
+  {
     "name": "hermit-shell",
     "description": "OpenAI-compatible proxy for Anthropic Claude via OAuth (hermit crab borrows the shell)",
     "date": "2026-03-21",
@@ -47,6 +97,16 @@ window.REPOS = [
     "commits": 14,
     "lang": "TypeScript",
     "url": "https://github.com/kojira/hermit-shell",
+    "live": null
+  },
+  {
+    "name": "embed-terminal",
+    "description": null,
+    "date": "2026-03-18",
+    "stars": 0,
+    "commits": 44,
+    "lang": "JavaScript",
+    "url": "https://github.com/kojira/embed-terminal",
     "live": null
   },
   {
@@ -110,6 +170,16 @@ window.REPOS = [
     "live": null
   },
   {
+    "name": "slm-kairo",
+    "description": null,
+    "date": "2026-02-09",
+    "stars": 0,
+    "commits": 19,
+    "lang": "Rust",
+    "url": "https://github.com/kojira/slm-kairo",
+    "live": null
+  },
+  {
     "name": "nostaro",
     "description": "A Nostr CLI tool built by AI agent のすたろう ⚡ Written in Rust.",
     "date": "2026-02-08",
@@ -127,6 +197,26 @@ window.REPOS = [
     "commits": 5,
     "lang": "TypeScript",
     "url": "https://github.com/kojira/vibe-hackathon",
+    "live": null
+  },
+  {
+    "name": "ai-rss-reader",
+    "description": null,
+    "date": "2026-01-29",
+    "stars": 0,
+    "commits": 23,
+    "lang": "TypeScript",
+    "url": "https://github.com/kojira/ai-rss-reader",
+    "live": null
+  },
+  {
+    "name": "llm-server",
+    "description": null,
+    "date": "2026-01-25",
+    "stars": 0,
+    "commits": 18,
+    "lang": "Rust",
+    "url": "https://github.com/kojira/llm-server",
     "live": null
   },
   {
@@ -167,6 +257,26 @@ window.REPOS = [
     "commits": 11,
     "lang": "TypeScript",
     "url": "https://github.com/kojira/NostrAnalytics",
+    "live": null
+  },
+  {
+    "name": "rustr",
+    "description": null,
+    "date": "2025-10-18",
+    "stars": 0,
+    "commits": 22,
+    "lang": "Rust",
+    "url": "https://github.com/kojira/rustr",
+    "live": null
+  },
+  {
+    "name": "NostrShrine",
+    "description": null,
+    "date": "2025-10-11",
+    "stars": 0,
+    "commits": 38,
+    "lang": "TypeScript",
+    "url": "https://github.com/kojira/NostrShrine",
     "live": null
   },
   {

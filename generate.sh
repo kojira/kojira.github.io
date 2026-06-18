@@ -10,6 +10,7 @@ MINCOMMITS=2
 
 # Org repos kojira created (owner/name). Edit this list to curate.
 INCLUDE=(
+  "428lab/events"
 )
 
 echo "Fetching own repos for $USER ..."
@@ -40,7 +41,7 @@ query($cursor: String, $login: String!) {
           else null end
         )
       })
-    | map(select(.stars>0 or .live!=null or (.description // "")!=""))
+    | map(select(.stars>0 or .live!=null or (.description // "")!="" or .commits>=15))
     | map(select(.commits > $min or .live != null))' \
 > /tmp/_own.json
 echo "  own (notable, commits>$MINCOMMITS): $(jq length /tmp/_own.json)"
