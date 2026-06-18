@@ -51,17 +51,17 @@ window.REPOS = [
   },
   {
     "name": "428lab/events",
-    "description": null,
+    "description": "All-in-one event-ops platform — announce, recruit, run, score and award hackathons and any event, with real-time presentation and scoring.",
     "date": "2026-05-30",
     "stars": 0,
     "commits": 52,
     "lang": "TypeScript",
     "url": "https://github.com/428lab/events",
-    "live": null
+    "live": "https://events.kojira.io"
   },
   {
     "name": "omoikane",
-    "description": null,
+    "description": "Knowledge-base server that lets AI coding agents (Claude Code, Cursor, Cline…) store and reverse-index past traps, decisions, design notes, lessons and incidents — toward a self-running librarian-agent community.",
     "date": "2026-05-12",
     "stars": 0,
     "commits": 112,
@@ -377,6 +377,16 @@ window.REPOS = [
     "commits": 52,
     "lang": "Python",
     "url": "https://github.com/kojira/nostify",
+    "live": null
+  },
+  {
+    "name": "428lab/debug-shrine",
+    "description": "Shrine-themed web app that tracks members GitHub activity (Firebase auth + Firestore) and grants titles/achievements. A Yotsuya-lab project.",
+    "date": "2021-11-25",
+    "stars": 18,
+    "commits": 426,
+    "lang": "JavaScript",
+    "url": "https://github.com/428lab/debug-shrine",
     "live": null
   },
   {

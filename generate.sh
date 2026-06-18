@@ -11,7 +11,23 @@ MINCOMMITS=2
 # Org repos kojira created (owner/name). Edit this list to curate.
 INCLUDE=(
   "428lab/events"
+  "428lab/debug-shrine"
 )
+
+# Portfolio-only overrides (repo settings are left untouched). Fill in
+# descriptions / live URLs for repos whose GitHub "About" is empty.
+OVERRIDES='{
+  "omoikane": {
+    "description": "Knowledge-base server that lets AI coding agents (Claude Code, Cursor, Cline…) store and reverse-index past traps, decisions, design notes, lessons and incidents — toward a self-running librarian-agent community."
+  },
+  "428lab/events": {
+    "description": "All-in-one event-ops platform — announce, recruit, run, score and award hackathons and any event, with real-time presentation and scoring.",
+    "live": "https://events.kojira.io"
+  },
+  "428lab/debug-shrine": {
+    "description": "Shrine-themed web app that tracks members GitHub activity (Firebase auth + Firestore) and grants titles/achievements. A Yotsuya-lab project."
+  }
+}'
 
 echo "Fetching own repos for $USER ..."
 gh api graphql -f query='
@@ -71,6 +87,12 @@ for full in ${INCLUDE[@]+"${INCLUDE[@]}"}; do
 done
 if [ -f /tmp/_org_lines.json ]; then jq -s '.' /tmp/_org_lines.json > /tmp/_org.json; else echo '[]' > /tmp/_org.json; fi
 
-jq -s '(.[0] + .[1]) | sort_by(.date) | reverse' /tmp/_own.json /tmp/_org.json > /tmp/_all.json
+jq -s --argjson ov "$OVERRIDES" '(.[0] + .[1])
+    | map(. as $r | ($ov[$r.name] // {}) as $o
+          | $r + {
+              description: (if ($o.description // "") != "" then $o.description else $r.description end),
+              live: ($o.live // $r.live)
+            })
+    | sort_by(.date) | reverse' /tmp/_own.json /tmp/_org.json > /tmp/_all.json
 { printf "window.REPOS = "; cat /tmp/_all.json; printf ";\n"; } > data.js
 echo "Wrote data.js with $(jq length /tmp/_all.json) repos."
