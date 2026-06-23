@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" />
+<style>
+  :root{
+    --bg:#0a0e14; --bg2:#0e131c; --text:#e8eef6; --muted:#8a97a9; --faint:#56616f;
+    --border:rgba(120,140,170,.16); --accent:#4aa8ff; --accent2:#8b6cff; --gold:#ffd76a;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{width:1200px;height:630px}
+  body{
+    font-family:"Inter",-apple-system,sans-serif;
+    background:linear-gradient(180deg,var(--bg2),var(--bg) 45%);
+    color:var(--text); overflow:hidden; position:relative;
+  }
+  /* faint dot grid */
+  .grid{
+    position:absolute; inset:0;
+    background-image:radial-gradient(rgba(120,140,170,.10) 1px, transparent 1px);
+    background-size:44px 44px; mask:linear-gradient(180deg,#000,transparent 78%);
+    -webkit-mask:linear-gradient(180deg,#000,transparent 78%);
+  }
+  /* glows */
+  .glow1{position:absolute; width:900px;height:900px; left:-260px; top:-460px;
+    background:radial-gradient(closest-side,rgba(74,168,255,.22),transparent 70%); filter:blur(8px)}
+  .glow2{position:absolute; width:820px;height:820px; right:-300px; bottom:-440px;
+    background:radial-gradient(closest-side,rgba(139,108,255,.22),transparent 70%); filter:blur(8px)}
+
+  .wrap{position:absolute; inset:0; padding:74px 84px; display:flex; flex-direction:column; justify-content:space-between}
+
+  .top{display:flex; align-items:center; gap:14px}
+  .badge{font-family:"Space Grotesk",sans-serif; font-weight:600; font-size:18px; letter-spacing:.18em;
+    text-transform:uppercase; color:var(--muted);
+    border:1px solid var(--border); padding:8px 16px; border-radius:999px; background:rgba(22,29,41,.5)}
+  .dotline{flex:1; height:2px; border-radius:2px;
+    background:linear-gradient(90deg,transparent,var(--accent) 12%,var(--accent2) 88%,transparent); opacity:.55}
+  .nodes{display:flex; gap:10px}
+  .nodes i{width:11px;height:11px;border-radius:50%; box-shadow:0 0 12px 1px currentColor}
+  .nodes i:nth-child(1){color:var(--accent);background:var(--accent)}
+  .nodes i:nth-child(2){color:var(--accent2);background:var(--accent2)}
+  .nodes i:nth-child(3){color:var(--gold);background:var(--gold)}
+
+  .mid{display:flex; align-items:center; justify-content:space-between; gap:40px}
+  .hero{margin-top:6px; flex:1}
+  .avatar{position:relative; flex:0 0 auto; width:300px; height:300px; border-radius:50%;
+    padding:5px; background:linear-gradient(135deg,var(--accent),var(--accent2));
+    box-shadow:0 0 0 1px rgba(255,255,255,.06), 0 18px 60px rgba(74,168,255,.35), 0 8px 30px rgba(139,108,255,.3)}
+  .avatar::after{content:""; position:absolute; inset:-26px; border-radius:50%;
+    background:radial-gradient(closest-side,rgba(74,168,255,.30),rgba(139,108,255,.22) 60%,transparent 72%); z-index:-1; filter:blur(4px)}
+  .avatar img{width:100%; height:100%; object-fit:cover; border-radius:50%;
+    border:5px solid var(--bg); display:block}
+  .logo{font-family:"Space Grotesk",sans-serif; font-weight:700; font-size:148px; line-height:.95;
+    letter-spacing:-.02em;
+    background:linear-gradient(100deg,#eaf2ff 0%,var(--accent) 46%,var(--accent2) 100%);
+    -webkit-background-clip:text; background-clip:text; color:transparent;
+    text-shadow:0 8px 40px rgba(74,168,255,.18)}
+  .tag{margin-top:18px; font-size:30px; font-weight:500; color:var(--text); max-width:900px}
+  .sub{margin-top:10px; font-size:21px; color:var(--muted); letter-spacing:.01em}
+  .sub b.bsky{color:var(--accent); font-weight:600}
+  .sub b.nostr{color:var(--accent2); font-weight:600}
+
+  .bottom{display:flex; align-items:flex-end; justify-content:space-between}
+  .techs{display:flex; flex-wrap:wrap; gap:12px; max-width:840px}
+  .chip{display:inline-flex; align-items:center; gap:9px; font-size:19px; font-weight:500; color:var(--text);
+    border:1px solid var(--border); background:rgba(22,29,41,.5); padding:9px 16px; border-radius:999px}
+  .chip i{width:12px; height:12px; border-radius:50%; box-shadow:0 0 8px 0 currentColor}
+  .url{font-family:"Space Grotesk",sans-serif; font-size:22px; font-weight:600; color:var(--muted)}
+  .url b{color:var(--text)}
+</style>
+</head>
+<body>
+  <div class="grid"></div>
+  <div class="glow1"></div>
+  <div class="glow2"></div>
+
+  <div class="wrap">
+    <div class="top">
+      <span class="badge">Projects&nbsp;Timeline</span>
+      <span class="dotline"></span>
+      <span class="nodes"><i></i><i></i><i></i></span>
+    </div>
+
+    <div class="mid">
+      <div class="hero">
+        <div class="logo">kojira</div>
+        <div class="tag">Public repositories — a timeline of things I've built.</div>
+        <div class="sub"><b class="nostr">Nostr</b> &amp; <b class="bsky">Bluesky</b> services · tools · experiments · AI agents</div>
+      </div>
+      <div class="avatar"><img src="kojiro.webp" alt="" /></div>
+    </div>
+
+    <div class="bottom">
+      <div class="techs">
+        <span class="chip"><i style="background:#3178c6"></i>TypeScript</span>
+        <span class="chip"><i style="background:#dea584"></i>Rust</span>
+        <span class="chip"><i style="background:#3572A5"></i>Python</span>
+        <span class="chip"><i style="background:#00ADD8"></i>Go</span>
+        <span class="chip"><i style="background:#f1e05a"></i>JavaScript</span>
+        <span class="chip"><i style="background:#00B4AB"></i>Dart</span>
+      </div>
+      <div class="url"><b>kojira</b>.github.io</div>
+    </div>
+  </div>
+</body>
+</html>
