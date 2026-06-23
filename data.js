@@ -37,7 +37,7 @@ window.REPOS = [
     "commits": 59,
     "lang": "TypeScript",
     "url": "https://github.com/kojira/nosplay",
-    "live": null
+    "live": "https://kojira.github.io/nosplay"
   },
   {
     "name": "nostr-haijin-checker",
@@ -47,7 +47,7 @@ window.REPOS = [
     "commits": 22,
     "lang": "TypeScript",
     "url": "https://github.com/kojira/nostr-haijin-checker",
-    "live": null
+    "live": "https://kojira.github.io/nostr-haijin-checker/"
   },
   {
     "name": "428lab/events",
@@ -87,7 +87,7 @@ window.REPOS = [
     "commits": 474,
     "lang": "TypeScript",
     "url": "https://github.com/kojira/aozoraquest",
-    "live": null
+    "live": "https://aozoraquest.app"
   },
   {
     "name": "hermit-shell",
@@ -167,7 +167,7 @@ window.REPOS = [
     "commits": 53,
     "lang": "Rust",
     "url": "https://github.com/kojira/noscha-io",
-    "live": null
+    "live": "https://noscha.io"
   },
   {
     "name": "slm-kairo",
@@ -227,7 +227,7 @@ window.REPOS = [
     "commits": 202,
     "lang": "TypeScript",
     "url": "https://github.com/kojira/NostrDraw",
-    "live": null
+    "live": "https://kojira.github.io/NostrDraw/"
   },
   {
     "name": "NostrYears",
@@ -237,7 +237,7 @@ window.REPOS = [
     "commits": 31,
     "lang": "TypeScript",
     "url": "https://github.com/kojira/NostrYears",
-    "live": null
+    "live": "https://kojira.github.io/NostrYears/"
   },
   {
     "name": "vllm_gb10",
@@ -257,7 +257,7 @@ window.REPOS = [
     "commits": 11,
     "lang": "TypeScript",
     "url": "https://github.com/kojira/NostrAnalytics",
-    "live": null
+    "live": "https://kojira.github.io/NostrAnalytics/"
   },
   {
     "name": "rustr",
@@ -277,7 +277,7 @@ window.REPOS = [
     "commits": 38,
     "lang": "TypeScript",
     "url": "https://github.com/kojira/NostrShrine",
-    "live": null
+    "live": "https://kojira.github.io/NostrShrine/"
   },
   {
     "name": "NostrSpellingBee",
@@ -287,7 +287,7 @@ window.REPOS = [
     "commits": 155,
     "lang": "TypeScript",
     "url": "https://github.com/kojira/NostrSpellingBee",
-    "live": "replit.com/@kojiran/NostrSpellingBee"
+    "live": null
   },
   {
     "name": "BottleMessenger",
@@ -297,7 +297,7 @@ window.REPOS = [
     "commits": 116,
     "lang": "TypeScript",
     "url": "https://github.com/kojira/BottleMessenger",
-    "live": "replit.com/@kojiran/BottleMessenger"
+    "live": null
   },
   {
     "name": "NostrActivity",
@@ -307,7 +307,7 @@ window.REPOS = [
     "commits": 33,
     "lang": "TypeScript",
     "url": "https://github.com/kojira/NostrActivity",
-    "live": "replit.com/@kojiran/NostrActivity"
+    "live": null
   },
   {
     "name": "repliNostr",
@@ -317,7 +317,7 @@ window.REPOS = [
     "commits": 215,
     "lang": "TypeScript",
     "url": "https://github.com/kojira/repliNostr",
-    "live": "replit.com/@kojiran/NostrConnect"
+    "live": null
   },
   {
     "name": "Noscha",
@@ -337,7 +337,7 @@ window.REPOS = [
     "commits": 111,
     "lang": "Python",
     "url": "https://github.com/kojira/bluesky-chan",
-    "live": null
+    "live": "https://bsky.app/profile/bskychan.bsky.social"
   },
   {
     "name": "nostr-summary-bot",
@@ -387,7 +387,7 @@ window.REPOS = [
     "commits": 426,
     "lang": "JavaScript",
     "url": "https://github.com/428lab/debug-shrine",
-    "live": null
+    "live": "https://d-shrine.jp"
   },
   {
     "name": "nanaemon",
@@ -398,16 +398,6 @@ window.REPOS = [
     "lang": "Python",
     "url": "https://github.com/kojira/nanaemon",
     "live": null
-  },
-  {
-    "name": "FindSenryu4Discord",
-    "description": ":jp: Detection \"Senryu\" Bot 4 Discord (Inspired of theoria24/FindHaiku4Mstdn)",
-    "date": "2019-08-29",
-    "stars": 0,
-    "commits": 51,
-    "lang": "Ruby",
-    "url": "https://github.com/kojira/FindSenryu4Discord",
-    "live": "https://discordapp.com/api/oauth2/authorize?client_id=480281065588785162&permissions=378880&scope=bot"
   },
   {
     "name": "excellent-ball",

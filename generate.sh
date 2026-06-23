@@ -25,9 +25,22 @@ OVERRIDES='{
     "live": "https://events.kojira.io"
   },
   "428lab/debug-shrine": {
-    "description": "Shrine-themed web app that tracks members GitHub activity (Firebase auth + Firestore) and grants titles/achievements. A Yotsuya-lab project."
-  }
+    "description": "Shrine-themed web app that tracks members GitHub activity (Firebase auth + Firestore) and grants titles/achievements. A Yotsuya-lab project.",
+    "live": "https://d-shrine.jp"
+  },
+  "nosplay": { "live": "https://kojira.github.io/nosplay" },
+  "aozoraquest": { "live": "https://aozoraquest.app" },
+  "noscha-io": { "live": "https://noscha.io" },
+  "NostrDraw": { "live": "https://kojira.github.io/NostrDraw/" },
+  "NostrYears": { "live": "https://kojira.github.io/NostrYears/" },
+  "NostrShrine": { "live": "https://kojira.github.io/NostrShrine/" },
+  "NostrAnalytics": { "live": "https://kojira.github.io/NostrAnalytics/" },
+  "nostr-haijin-checker": { "live": "https://kojira.github.io/nostr-haijin-checker/" },
+  "bluesky-chan": { "live": "https://bsky.app/profile/bskychan.bsky.social" }
 }'
+
+# Repos to exclude from the portfolio entirely (by name), even if notable.
+EXCLUDE='["FindSenryu4Discord"]'
 
 echo "Fetching own repos for $USER ..."
 gh api graphql -f query='
@@ -87,7 +100,8 @@ for full in ${INCLUDE[@]+"${INCLUDE[@]}"}; do
 done
 if [ -f /tmp/_org_lines.json ]; then jq -s '.' /tmp/_org_lines.json > /tmp/_org.json; else echo '[]' > /tmp/_org.json; fi
 
-jq -s --argjson ov "$OVERRIDES" '(.[0] + .[1])
+jq -s --argjson ov "$OVERRIDES" --argjson exclude "$EXCLUDE" '(.[0] + .[1])
+    | map(select(.name as $n | ($exclude | index($n)) | not))
     | map(. as $r | ($ov[$r.name] // {}) as $o
           | $r + {
               description: (if ($o.description // "") != "" then $o.description else $r.description end),
