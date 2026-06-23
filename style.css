@@ -146,6 +146,9 @@ main { padding: 24px 0 40px; }
   text-align: center;
   margin: 8px 0 18px;
   z-index: 2;
+  /* 装飾ラベル。全幅の箱が直上カードのタイトルに重なってクリックを奪うため、クリックを
+     透過させる（年境界ごとに「その年の最後のカード」が押せなくなる不具合の修正）。 */
+  pointer-events: none;
 }
 .year span {
   font-family: "Space Grotesk", sans-serif;
