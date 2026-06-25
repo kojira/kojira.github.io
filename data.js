@@ -411,3 +411,11 @@ window.REPOS = [
   }
 ]
 ;
+// サマリーの数字は全リポジトリ対象（own 全公開 + 428lab の2件、fork 除く）。
+// generate.sh が再生成する。タイムライン(REPOS)は厳選表示のままで別物。
+window.TOTALS = {
+  "projects": 75,
+  "stars": 89,
+  "commits": 4737,
+  "since": 2010
+};

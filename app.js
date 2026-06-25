@@ -64,13 +64,16 @@ function render() {
     idx++;
   }
 
-  // summary stats
-  const totalStars = repos.reduce((a, r) => a + (r.stars || 0), 0);
-  const totalCommits = repos.reduce((a, r) => a + (r.commits || 0), 0);
-  const years = repos.map((r) => +r.date.slice(0, 4));
-  const since = years.length ? Math.min(...years) : "";
+  // summary stats — 全リポジトリ集計(window.TOTALS)を優先。タイムラインは厳選表示だが、
+  // この数字は全リポジトリ(own 全公開 + 428lab、fork 除く)を対象にする。
+  // TOTALS が無い場合は従来どおり表示中 REPOS から算出。
+  const T = window.TOTALS || null;
+  const nProjects = T ? T.projects : repos.length;
+  const totalStars = T ? T.stars : repos.reduce((a, r) => a + (r.stars || 0), 0);
+  const totalCommits = T ? T.commits : repos.reduce((a, r) => a + (r.commits || 0), 0);
+  const since = T ? T.since : (repos.length ? Math.min(...repos.map((r) => +r.date.slice(0, 4))) : "");
   document.getElementById("summary").innerHTML = `
-    <span class="stat"><b>${repos.length}</b><span>projects</span></span>
+    <span class="stat"><b>${nProjects}</b><span>projects</span></span>
     <span class="stat"><b>${totalStars}</b><span>stars</span></span>
     <span class="stat"><b>${totalCommits.toLocaleString("en-US")}</b><span>commits</span></span>
     <span class="stat"><b>${since}</b><span>since</span></span>`;

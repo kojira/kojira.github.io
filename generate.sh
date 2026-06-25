@@ -56,7 +56,7 @@ query($cursor: String, $login: String!) {
     }
   }
 }' -F login="$USER" --paginate --slurp \
-| jq --argjson min "$MINCOMMITS" '[.[].data.user.repositories.nodes[]]
+| jq '[.[].data.user.repositories.nodes[]]
     | map({
         name, description,
         date: .createdAt[0:10],
@@ -69,10 +69,15 @@ query($cursor: String, $login: String!) {
           elif (.name=="bluesky-license" or .name=="nostr-license" or .name=="nostr-brainmaker") then ("https://kojira.github.io/" + .name + "/")
           else null end
         )
-      })
-    | map(select(.stars>0 or .live!=null or (.description // "")!="" or .commits>=15))
-    | map(select(.commits > $min or .live != null))' \
-> /tmp/_own.json
+      })' \
+> /tmp/_own_all.json
+echo "  own (all public, non-fork): $(jq length /tmp/_own_all.json)"
+
+# 表示用は「notable」だけに絞り込む（タイムラインのカード）。
+jq --argjson min "$MINCOMMITS" '
+    map(select(.stars>0 or .live!=null or (.description // "")!="" or .commits>=15))
+  | map(select(.commits > $min or .live != null))' \
+  /tmp/_own_all.json > /tmp/_own.json
 echo "  own (notable, commits>$MINCOMMITS): $(jq length /tmp/_own.json)"
 
 echo "Fetching ${#INCLUDE[@]} included org repos ..."
@@ -108,5 +113,15 @@ jq -s --argjson ov "$OVERRIDES" --argjson exclude "$EXCLUDE" '(.[0] + .[1])
               live: ($o.live // $r.live)
             })
     | sort_by(.date) | reverse' /tmp/_own.json /tmp/_org.json > /tmp/_all.json
-{ printf "window.REPOS = "; cat /tmp/_all.json; printf ";\n"; } > data.js
-echo "Wrote data.js with $(jq length /tmp/_all.json) repos."
+
+# ヘッダーのサマリー数字は【全リポジトリ対象】(own 全公開 non-fork + 428lab、fork 除く)。
+# 表示は厳選 REPOS のままだが、数字は全体を集計する（EXCLUDE は表示専用なので含める）。
+jq -s '(.[0] + .[1]) | {
+    projects: length,
+    stars: ([.[].stars] | add),
+    commits: ([.[].commits] | add),
+    since: ([.[].date[0:4] | tonumber] | min)
+  }' /tmp/_own_all.json /tmp/_org.json > /tmp/_totals.json
+
+{ printf "window.REPOS = "; cat /tmp/_all.json; printf ";\nwindow.TOTALS = "; cat /tmp/_totals.json; printf ";\n"; } > data.js
+echo "Wrote data.js with $(jq length /tmp/_all.json) repos (display) / totals: $(jq -c . /tmp/_totals.json)"
