@@ -54,7 +54,7 @@ window.REPOS = [
     "description": "All-in-one event-ops platform — announce, recruit, run, score and award hackathons and any event, with real-time presentation and scoring.",
     "date": "2026-05-30",
     "stars": 0,
-    "commits": 73,
+    "commits": 74,
     "lang": "TypeScript",
     "url": "https://github.com/428lab/events",
     "live": "https://events.kojira.io"
@@ -414,7 +414,7 @@ window.REPOS = [
 window.TOTALS = {
   "projects": 75,
   "stars": 90,
-  "commits": 4745,
+  "commits": 4747,
   "since": 2010
 }
 ;
