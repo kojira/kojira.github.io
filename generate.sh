@@ -36,7 +36,12 @@ OVERRIDES='{
   "NostrShrine": { "live": "https://kojira.github.io/NostrShrine/" },
   "NostrAnalytics": { "live": "https://kojira.github.io/NostrAnalytics/" },
   "nostr-haijin-checker": { "live": "https://kojira.github.io/nostr-haijin-checker/" },
-  "bluesky-chan": { "live": "https://bsky.app/profile/bskychan.bsky.social" }
+  "bluesky-chan": { "live": "https://bsky.app/profile/bskychan.bsky.social" },
+  "_comment_dead_live": "以下は repo の homepageUrl に消滅した replit リンク(404・scheme無し)が残っているため明示的に null で上書きする",
+  "NostrSpellingBee": { "live": null },
+  "BottleMessenger": { "live": null },
+  "NostrActivity": { "live": null },
+  "repliNostr": { "live": null }
 }'
 
 # Repos to exclude from the portfolio entirely (by name), even if notable.
@@ -110,7 +115,7 @@ jq -s --argjson ov "$OVERRIDES" --argjson exclude "$EXCLUDE" '(.[0] + .[1])
     | map(. as $r | ($ov[$r.name] // {}) as $o
           | $r + {
               description: (if ($o.description // "") != "" then $o.description else $r.description end),
-              live: ($o.live // $r.live)
+              live: (if ($o | has("live")) then $o.live else $r.live end)
             })
     | sort_by(.date) | reverse' /tmp/_own.json /tmp/_org.json > /tmp/_all.json
 

@@ -3,8 +3,8 @@ window.REPOS = [
     "name": "bluesky-license",
     "description": "Generate a driver's-license-style card from any Bluesky profile (AT Protocol). Sibling of nostr-license.",
     "date": "2026-06-18",
-    "stars": 1,
-    "commits": 8,
+    "stars": 8,
+    "commits": 10,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/bluesky-license",
     "live": "https://kojira.github.io/bluesky-license/"
@@ -14,7 +14,7 @@ window.REPOS = [
     "description": "NIP-07/npub からNostrプロフィールを読み込み、運転免許証風カードを生成するWebアプリTool",
     "date": "2026-06-15",
     "stars": 1,
-    "commits": 9,
+    "commits": 21,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/nostr-license",
     "live": "https://kojira.github.io/nostr-license/"
@@ -34,7 +34,7 @@ window.REPOS = [
     "description": null,
     "date": "2026-06-09",
     "stars": 1,
-    "commits": 59,
+    "commits": 69,
     "lang": "TypeScript",
     "url": "https://github.com/kojira/nosplay",
     "live": "https://kojira.github.io/nosplay"
@@ -44,7 +44,7 @@ window.REPOS = [
     "description": null,
     "date": "2026-06-08",
     "stars": 0,
-    "commits": 22,
+    "commits": 23,
     "lang": "TypeScript",
     "url": "https://github.com/kojira/nostr-haijin-checker",
     "live": "https://kojira.github.io/nostr-haijin-checker/"
@@ -54,7 +54,7 @@ window.REPOS = [
     "description": "All-in-one event-ops platform — announce, recruit, run, score and award hackathons and any event, with real-time presentation and scoring.",
     "date": "2026-05-30",
     "stars": 0,
-    "commits": 52,
+    "commits": 73,
     "lang": "TypeScript",
     "url": "https://github.com/428lab/events",
     "live": "https://events.kojira.io"
@@ -64,7 +64,7 @@ window.REPOS = [
     "description": "Knowledge-base server that lets AI coding agents (Claude Code, Cursor, Cline…) store and reverse-index past traps, decisions, design notes, lessons and incidents — toward a self-running librarian-agent community.",
     "date": "2026-05-12",
     "stars": 0,
-    "commits": 112,
+    "commits": 116,
     "lang": "Go",
     "url": "https://github.com/kojira/omoikane",
     "live": null
@@ -81,10 +81,10 @@ window.REPOS = [
   },
   {
     "name": "aozoraquest",
-    "description": null,
+    "description": "Bluesky の投稿からジョブとステータスを可視化し、毎日のクエストで目指す姿に近づく Web クライアント。AI 推論は端末内 (Gemini Nano / ONNX) で完結。",
     "date": "2026-04-21",
     "stars": 0,
-    "commits": 474,
+    "commits": 491,
     "lang": "TypeScript",
     "url": "https://github.com/kojira/aozoraquest",
     "live": "https://aozoraquest.app"
@@ -163,7 +163,7 @@ window.REPOS = [
     "name": "noscha-io",
     "description": "Lightning Network powered disposable email, subdomain, and NIP-05 service on Cloudflare Workers",
     "date": "2026-02-11",
-    "stars": 0,
+    "stars": 1,
     "commits": 53,
     "lang": "Rust",
     "url": "https://github.com/kojira/noscha-io",
@@ -234,7 +234,7 @@ window.REPOS = [
     "description": null,
     "date": "2025-12-05",
     "stars": 3,
-    "commits": 31,
+    "commits": 32,
     "lang": "TypeScript",
     "url": "https://github.com/kojira/NostrYears",
     "live": "https://kojira.github.io/NostrYears/"
@@ -254,7 +254,7 @@ window.REPOS = [
     "description": null,
     "date": "2025-10-19",
     "stars": 1,
-    "commits": 11,
+    "commits": 12,
     "lang": "TypeScript",
     "url": "https://github.com/kojira/NostrAnalytics",
     "live": "https://kojira.github.io/NostrAnalytics/"
@@ -274,7 +274,7 @@ window.REPOS = [
     "description": null,
     "date": "2025-10-11",
     "stars": 0,
-    "commits": 38,
+    "commits": 39,
     "lang": "TypeScript",
     "url": "https://github.com/kojira/NostrShrine",
     "live": "https://kojira.github.io/NostrShrine/"
@@ -334,7 +334,7 @@ window.REPOS = [
     "description": null,
     "date": "2023-05-19",
     "stars": 6,
-    "commits": 111,
+    "commits": 112,
     "lang": "Python",
     "url": "https://github.com/kojira/bluesky-chan",
     "live": "https://bsky.app/profile/bskychan.bsky.social"
@@ -364,7 +364,7 @@ window.REPOS = [
     "description": null,
     "date": "2023-02-23",
     "stars": 1,
-    "commits": 1173,
+    "commits": 1187,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/kojira",
     "live": null
@@ -384,7 +384,7 @@ window.REPOS = [
     "description": "Shrine-themed web app that tracks members GitHub activity (Firebase auth + Firestore) and grants titles/achievements. A Yotsuya-lab project.",
     "date": "2021-11-25",
     "stars": 18,
-    "commits": 426,
+    "commits": 427,
     "lang": "JavaScript",
     "url": "https://github.com/428lab/debug-shrine",
     "live": "https://d-shrine.jp"
@@ -411,11 +411,10 @@ window.REPOS = [
   }
 ]
 ;
-// サマリーの数字は全リポジトリ対象（own 全公開 + 428lab の2件、fork 除く）。
-// generate.sh が再生成する。タイムライン(REPOS)は厳選表示のままで別物。
 window.TOTALS = {
   "projects": 75,
-  "stars": 89,
-  "commits": 4737,
+  "stars": 90,
+  "commits": 4745,
   "since": 2010
-};
+}
+;

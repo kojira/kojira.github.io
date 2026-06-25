@@ -1,0 +1,41 @@
+name: Refresh portfolio data
+
+# generate.sh を定期実行して data.js（タイムライン＋サマリー集計）を最新化する。
+# 変更があったときだけコミット＆プッシュ → GitHub Pages が再ビルドされる。
+on:
+  schedule:
+    - cron: "0 18 * * *"   # 毎日 18:00 UTC（= 03:00 JST）
+  workflow_dispatch: {}      # 手動実行も可能（Actions タブから Run workflow）
+
+permissions:
+  contents: write            # data.js を push するため
+
+concurrency:
+  group: refresh-data
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Regenerate data.js
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}   # gh CLI 用（公開リポジトリの読み取りに使用）
+        run: |
+          chmod +x generate.sh
+          ./generate.sh
+
+      - name: Commit & push if changed
+        run: |
+          if git diff --quiet -- data.js; then
+            echo "data.js に変更なし。スキップ。"
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data.js
+          git commit -m "chore: refresh portfolio data.js (automated)"
+          git push
+          echo "data.js を更新してプッシュしました。"
