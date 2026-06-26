@@ -14,21 +14,11 @@ INCLUDE=(
   "428lab/debug-shrine"
 )
 
-# 表示用のテキストだけを補う任意のオーバーライド。
-# ★ live リンクはここに直書きしない。各リポジトリの GitHub homepage（About の🔗Website）が
-#   唯一の正で、generate.sh はそれを読むだけ（live を出したい repo は homepage を設定する）。
-# ここは GitHub の About 説明が空のリポジトリに説明文だけ補うために残している。
-OVERRIDES='{
-  "omoikane": {
-    "description": "Knowledge-base server that lets AI coding agents (Claude Code, Cursor, Cline…) store and reverse-index past traps, decisions, design notes, lessons and incidents — toward a self-running librarian-agent community."
-  },
-  "428lab/events": {
-    "description": "All-in-one event-ops platform — announce, recruit, run, score and award hackathons and any event, with real-time presentation and scoring."
-  },
-  "428lab/debug-shrine": {
-    "description": "Shrine-themed web app that tracks members GitHub activity (Firebase auth + Firestore) and grants titles/achievements. A Yotsuya-lab project."
-  }
-}'
+# すべて GitHub 側のメタデータを正とする（スクリプトに直書きしない）:
+#   - 説明文 … 各リポジトリの GitHub description（About）
+#   - live リンク … 各リポジトリの GitHub homepage（About の🔗Website）
+#   - 表示/非表示 … `no-portfolio` トピック
+# よって表示テキストの直書きオーバーライドは持たない。
 
 # タイムライン表示から隠したいリポジトリは、GitHub 側で下記トピックを付けるだけでよい
 # （スクリプトを編集せず GitHub の Settings/Topics で管理できる）。
@@ -102,13 +92,9 @@ for full in ${INCLUDE[@]+"${INCLUDE[@]}"}; do
 done
 if [ -f /tmp/_org_lines.json ]; then jq -s '.' /tmp/_org_lines.json > /tmp/_org.json; else echo '[]' > /tmp/_org.json; fi
 
-jq -s --argjson ov "$OVERRIDES" --argjson exclude "$EXCLUDE" '(.[0] + .[1])
+jq -s --argjson exclude "$EXCLUDE" '(.[0] + .[1])
     | map(select(.name as $n | ($exclude | index($n)) | not))
-    | map(. as $r | ($ov[$r.name] // {}) as $o
-          | ($r + {
-              description: (if ($o.description // "") != "" then $o.description else $r.description end),
-              live: (if ($o | has("live")) then $o.live else $r.live end)
-            }) | del(.topics))
+    | map(del(.topics))
     | sort_by(.date) | reverse' /tmp/_own.json /tmp/_org.json > /tmp/_all.json
 
 # ヘッダーのサマリー数字は【全リポジトリ対象】(own 全公開 non-fork + 428lab、fork 除く)。
