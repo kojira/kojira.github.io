@@ -87,6 +87,9 @@ body {
 .summary .stat span { color: var(--muted); margin-left: 6px; }
 .links { margin-top: 20px; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
 .links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   color: var(--text);
   text-decoration: none;
   border: 1px solid var(--border);
@@ -95,6 +98,7 @@ body {
   font-size: 14px;
   transition: background .2s, border-color .2s;
 }
+.links .ico { width: 16px; height: 16px; flex: 0 0 auto; }
 .links a:hover { background: rgba(74,168,255,0.12); border-color: var(--accent); }
 
 .scroll-hint {

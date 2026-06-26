@@ -2,3 +2,5 @@
 # OG 画像の中間生成物（_og/og.html から再生成可能）
 _og/og.png
 _og/og@2x.png
+_og/icons_preview.*
+_og/header_check.png
