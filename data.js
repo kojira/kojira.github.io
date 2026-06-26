@@ -130,16 +130,6 @@ window.REPOS = [
     "live": null
   },
   {
-    "name": "mosh-wasm",
-    "description": "Rust/WASM implementation of mosh (Mobile Shell) transport for VS Code Remote-Mosh",
-    "date": "2026-02-21",
-    "stars": 0,
-    "commits": 7,
-    "lang": "Rust",
-    "url": "https://github.com/kojira/mosh-wasm",
-    "live": null
-  },
-  {
     "name": "vscode-remote-mosh",
     "description": "VS Code extension: full remote development over Mosh (Mobile Shell) - survives network drops and IP changes",
     "date": "2026-02-21",
@@ -147,6 +137,16 @@ window.REPOS = [
     "commits": 8,
     "lang": "TypeScript",
     "url": "https://github.com/kojira/vscode-remote-mosh",
+    "live": null
+  },
+  {
+    "name": "mosh-wasm",
+    "description": "Rust/WASM implementation of mosh (Mobile Shell) transport for VS Code Remote-Mosh",
+    "date": "2026-02-21",
+    "stars": 0,
+    "commits": 7,
+    "lang": "Rust",
+    "url": "https://github.com/kojira/mosh-wasm",
     "live": null
   },
   {
@@ -404,7 +404,7 @@ window.REPOS = [
     "description": null,
     "date": "2017-03-24",
     "stars": 0,
-    "commits": 20,
+    "commits": 21,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/kojira.github.io",
     "live": null
@@ -424,7 +424,7 @@ window.REPOS = [
 window.TOTALS = {
   "projects": 75,
   "stars": 90,
-  "commits": 4758,
+  "commits": 4759,
   "since": 2010
 }
 ;
