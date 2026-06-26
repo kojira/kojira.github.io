@@ -44,8 +44,14 @@ OVERRIDES='{
   "repliNostr": { "live": null }
 }'
 
-# Repos to exclude from the portfolio entirely (by name), even if notable.
-EXCLUDE='["FindSenryu4Discord"]'
+# タイムライン表示から隠したいリポジトリは、GitHub 側で下記トピックを付けるだけでよい
+# （スクリプトを編集せず GitHub の Settings/Topics で管理できる）。
+# 例: gh repo edit kojira/FindSenryu4Discord --add-topic no-portfolio
+# ※ 隠すのは「表示」だけ。ヘッダーの集計数(TOTALS)には全リポジトリとして含める。
+HIDE_TOPIC="no-portfolio"
+
+# 追加で名前指定でも除外できる手動オーバーライド（通常は空でよい。トピック運用を推奨）。
+EXCLUDE='[]'
 
 echo "Fetching own repos for $USER ..."
 gh api graphql -f query='
@@ -56,6 +62,7 @@ query($cursor: String, $login: String!) {
       nodes {
         name description createdAt stargazerCount url homepageUrl isArchived
         primaryLanguage { name }
+        repositoryTopics(first: 30) { nodes { topic { name } } }
         defaultBranchRef { target { ... on Commit { history { totalCount } } } }
       }
     }
@@ -69,6 +76,7 @@ query($cursor: String, $login: String!) {
         commits: (.defaultBranchRef.target.history.totalCount // 0),
         lang: (.primaryLanguage.name // null),
         url,
+        topics: [.repositoryTopics.nodes[].topic.name],
         live: (
           if (.homepageUrl // "") != "" then .homepageUrl
           elif (.name=="bluesky-license" or .name=="nostr-license" or .name=="nostr-brainmaker") then ("https://kojira.github.io/" + .name + "/")
@@ -79,11 +87,13 @@ query($cursor: String, $login: String!) {
 echo "  own (all public, non-fork): $(jq length /tmp/_own_all.json)"
 
 # 表示用は「notable」だけに絞り込む（タイムラインのカード）。
-jq --argjson min "$MINCOMMITS" '
-    map(select(.stars>0 or .live!=null or (.description // "")!="" or .commits>=15))
+# さらに HIDE_TOPIC トピックの付いたリポジトリは表示から除外する（集計には残る）。
+jq --argjson min "$MINCOMMITS" --arg hide "$HIDE_TOPIC" '
+    map(select((.topics // []) | index($hide) | not))
+  | map(select(.stars>0 or .live!=null or (.description // "")!="" or .commits>=15))
   | map(select(.commits > $min or .live != null))' \
   /tmp/_own_all.json > /tmp/_own.json
-echo "  own (notable, commits>$MINCOMMITS): $(jq length /tmp/_own.json)"
+echo "  own (notable & not hidden, commits>$MINCOMMITS): $(jq length /tmp/_own.json)"
 
 echo "Fetching ${#INCLUDE[@]} included org repos ..."
 rm -f /tmp/_org_lines.json
@@ -113,10 +123,10 @@ if [ -f /tmp/_org_lines.json ]; then jq -s '.' /tmp/_org_lines.json > /tmp/_org.
 jq -s --argjson ov "$OVERRIDES" --argjson exclude "$EXCLUDE" '(.[0] + .[1])
     | map(select(.name as $n | ($exclude | index($n)) | not))
     | map(. as $r | ($ov[$r.name] // {}) as $o
-          | $r + {
+          | ($r + {
               description: (if ($o.description // "") != "" then $o.description else $r.description end),
               live: (if ($o | has("live")) then $o.live else $r.live end)
-            })
+            }) | del(.topics))
     | sort_by(.date) | reverse' /tmp/_own.json /tmp/_org.json > /tmp/_all.json
 
 # ヘッダーのサマリー数字は【全リポジトリ対象】(own 全公開 non-fork + 428lab、fork 除く)。
