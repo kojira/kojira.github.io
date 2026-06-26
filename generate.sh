@@ -14,34 +14,20 @@ INCLUDE=(
   "428lab/debug-shrine"
 )
 
-# Portfolio-only overrides (repo settings are left untouched). Fill in
-# descriptions / live URLs for repos whose GitHub "About" is empty.
+# 表示用のテキストだけを補う任意のオーバーライド。
+# ★ live リンクはここに直書きしない。各リポジトリの GitHub homepage（About の🔗Website）が
+#   唯一の正で、generate.sh はそれを読むだけ（live を出したい repo は homepage を設定する）。
+# ここは GitHub の About 説明が空のリポジトリに説明文だけ補うために残している。
 OVERRIDES='{
   "omoikane": {
     "description": "Knowledge-base server that lets AI coding agents (Claude Code, Cursor, Cline…) store and reverse-index past traps, decisions, design notes, lessons and incidents — toward a self-running librarian-agent community."
   },
   "428lab/events": {
-    "description": "All-in-one event-ops platform — announce, recruit, run, score and award hackathons and any event, with real-time presentation and scoring.",
-    "live": "https://events.kojira.io"
+    "description": "All-in-one event-ops platform — announce, recruit, run, score and award hackathons and any event, with real-time presentation and scoring."
   },
   "428lab/debug-shrine": {
-    "description": "Shrine-themed web app that tracks members GitHub activity (Firebase auth + Firestore) and grants titles/achievements. A Yotsuya-lab project.",
-    "live": "https://d-shrine.jp"
-  },
-  "nosplay": { "live": "https://kojira.github.io/nosplay" },
-  "aozoraquest": { "live": "https://aozoraquest.app" },
-  "noscha-io": { "live": "https://noscha.io" },
-  "NostrDraw": { "live": "https://kojira.github.io/NostrDraw/" },
-  "NostrYears": { "live": "https://kojira.github.io/NostrYears/" },
-  "NostrShrine": { "live": "https://kojira.github.io/NostrShrine/" },
-  "NostrAnalytics": { "live": "https://kojira.github.io/NostrAnalytics/" },
-  "nostr-haijin-checker": { "live": "https://kojira.github.io/nostr-haijin-checker/" },
-  "bluesky-chan": { "live": "https://bsky.app/profile/bskychan.bsky.social" },
-  "_comment_dead_live": "以下は repo の homepageUrl に消滅した replit リンク(404・scheme無し)が残っているため明示的に null で上書きする",
-  "NostrSpellingBee": { "live": null },
-  "BottleMessenger": { "live": null },
-  "NostrActivity": { "live": null },
-  "repliNostr": { "live": null }
+    "description": "Shrine-themed web app that tracks members GitHub activity (Firebase auth + Firestore) and grants titles/achievements. A Yotsuya-lab project."
+  }
 }'
 
 # タイムライン表示から隠したいリポジトリは、GitHub 側で下記トピックを付けるだけでよい
@@ -77,11 +63,7 @@ query($cursor: String, $login: String!) {
         lang: (.primaryLanguage.name // null),
         url,
         topics: [.repositoryTopics.nodes[].topic.name],
-        live: (
-          if (.homepageUrl // "") != "" then .homepageUrl
-          elif (.name=="bluesky-license" or .name=="nostr-license" or .name=="nostr-brainmaker") then ("https://kojira.github.io/" + .name + "/")
-          else null end
-        )
+        live: (if (.homepageUrl // "") != "" then .homepageUrl else null end)
       })' \
 > /tmp/_own_all.json
 echo "  own (all public, non-fork): $(jq length /tmp/_own_all.json)"
