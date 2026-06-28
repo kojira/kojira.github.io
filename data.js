@@ -1,5 +1,15 @@
 window.REPOS = [
   {
+    "name": "opencrab",
+    "description": "Sanitized OpenCrab repository",
+    "date": "2026-06-28",
+    "stars": 0,
+    "commits": 301,
+    "lang": "Rust",
+    "url": "https://github.com/kojira/opencrab",
+    "live": null
+  },
+  {
     "name": "bluesky-license",
     "description": "Generate a driver's-license-style card from any Bluesky profile (AT Protocol). Sibling of nostr-license.",
     "date": "2026-06-18",
@@ -54,7 +64,7 @@ window.REPOS = [
     "description": "All-in-one event-ops platform — announce, recruit, run, score and award hackathons and any event, with real-time presentation and scoring.",
     "date": "2026-05-30",
     "stars": 0,
-    "commits": 117,
+    "commits": 126,
     "lang": "TypeScript",
     "url": "https://github.com/428lab/events",
     "live": "https://events.kojira.io"
@@ -147,16 +157,6 @@ window.REPOS = [
     "commits": 7,
     "lang": "Rust",
     "url": "https://github.com/kojira/mosh-wasm",
-    "live": null
-  },
-  {
-    "name": "opencrab",
-    "description": "Autonomous AI agent framework in Rust - agents discuss, learn, and generate skills",
-    "date": "2026-02-18",
-    "stars": 1,
-    "commits": 305,
-    "lang": "Rust",
-    "url": "https://github.com/kojira/opencrab",
     "live": null
   },
   {
@@ -364,7 +364,7 @@ window.REPOS = [
     "description": null,
     "date": "2023-02-23",
     "stars": 1,
-    "commits": 1191,
+    "commits": 1193,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/kojira",
     "live": null
@@ -404,7 +404,7 @@ window.REPOS = [
     "description": null,
     "date": "2017-03-24",
     "stars": 0,
-    "commits": 23,
+    "commits": 24,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/kojira.github.io",
     "live": null
@@ -423,8 +423,8 @@ window.REPOS = [
 ;
 window.TOTALS = {
   "projects": 75,
-  "stars": 90,
-  "commits": 4803,
+  "stars": 89,
+  "commits": 4811,
   "since": 2010
 }
 ;
