@@ -84,7 +84,7 @@ window.REPOS = [
     "description": "Bluesky の投稿からジョブとステータスを可視化し、毎日のクエストで目指す姿に近づく Web クライアント。AI 推論は端末内 (Gemini Nano / ONNX) で完結。",
     "date": "2026-04-21",
     "stars": 0,
-    "commits": 507,
+    "commits": 511,
     "lang": "TypeScript",
     "url": "https://github.com/kojira/aozoraquest",
     "live": "https://aozoraquest.app"
@@ -354,7 +354,7 @@ window.REPOS = [
     "description": null,
     "date": "2023-02-23",
     "stars": 1,
-    "commits": 1211,
+    "commits": 1213,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/kojira",
     "live": null
@@ -374,7 +374,7 @@ window.REPOS = [
     "description": "Shrine-themed web app that tracks members GitHub activity (Firebase auth + Firestore) and grants titles/achievements. A Yotsuya-lab project.",
     "date": "2021-11-25",
     "stars": 18,
-    "commits": 516,
+    "commits": 526,
     "lang": "JavaScript",
     "url": "https://github.com/428lab/debug-shrine",
     "live": "https://d-shrine.jp"
@@ -394,7 +394,7 @@ window.REPOS = [
     "description": null,
     "date": "2017-03-24",
     "stars": 0,
-    "commits": 33,
+    "commits": 34,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/kojira.github.io",
     "live": null
@@ -414,7 +414,7 @@ window.REPOS = [
 window.TOTALS = {
   "projects": 75,
   "stars": 89,
-  "commits": 4878,
+  "commits": 4895,
   "since": 2010
 }
 ;
