@@ -1,5 +1,15 @@
 window.REPOS = [
   {
+    "name": "428lab/kuda",
+    "description": null,
+    "date": "2026-07-08",
+    "stars": 0,
+    "commits": 19,
+    "lang": "TypeScript",
+    "url": "https://github.com/428lab/kuda",
+    "live": null
+  },
+  {
     "name": "opencrab",
     "description": "Sanitized OpenCrab repository",
     "date": "2026-06-28",
@@ -64,7 +74,7 @@ window.REPOS = [
     "description": "All-in-one event-ops platform — announce, recruit, run, score and award hackathons and any event, with real-time presentation and scoring.",
     "date": "2026-05-30",
     "stars": 0,
-    "commits": 142,
+    "commits": 145,
     "lang": "TypeScript",
     "url": "https://github.com/428lab/events",
     "live": "https://events.kojira.io"
@@ -84,7 +94,7 @@ window.REPOS = [
     "description": "Bluesky の投稿からジョブとステータスを可視化し、毎日のクエストで目指す姿に近づく Web クライアント。AI 推論は端末内 (Gemini Nano / ONNX) で完結。",
     "date": "2026-04-21",
     "stars": 0,
-    "commits": 511,
+    "commits": 513,
     "lang": "TypeScript",
     "url": "https://github.com/kojira/aozoraquest",
     "live": "https://aozoraquest.app"
@@ -354,7 +364,7 @@ window.REPOS = [
     "description": null,
     "date": "2023-02-23",
     "stars": 1,
-    "commits": 1213,
+    "commits": 1217,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/kojira",
     "live": null
@@ -394,7 +404,7 @@ window.REPOS = [
     "description": null,
     "date": "2017-03-24",
     "stars": 0,
-    "commits": 34,
+    "commits": 35,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/kojira.github.io",
     "live": null
@@ -412,9 +422,9 @@ window.REPOS = [
 ]
 ;
 window.TOTALS = {
-  "projects": 75,
+  "projects": 76,
   "stars": 89,
-  "commits": 4895,
+  "commits": 4924,
   "since": 2010
 }
 ;
