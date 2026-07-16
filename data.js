@@ -14,7 +14,7 @@ window.REPOS = [
     "description": "Sanitized OpenCrab repository",
     "date": "2026-06-28",
     "stars": 0,
-    "commits": 361,
+    "commits": 363,
     "lang": "Rust",
     "url": "https://github.com/kojira/opencrab",
     "live": null
@@ -364,7 +364,7 @@ window.REPOS = [
     "description": null,
     "date": "2023-02-23",
     "stars": 1,
-    "commits": 1230,
+    "commits": 1232,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/kojira",
     "live": null
@@ -373,7 +373,7 @@ window.REPOS = [
     "name": "nostify",
     "description": null,
     "date": "2023-02-15",
-    "stars": 13,
+    "stars": 12,
     "commits": 52,
     "lang": "Python",
     "url": "https://github.com/kojira/nostify",
@@ -384,7 +384,7 @@ window.REPOS = [
     "description": "Shrine-themed web app that tracks members GitHub activity (Firebase auth + Firestore) and grants titles/achievements. A Yotsuya-lab project.",
     "date": "2021-11-25",
     "stars": 18,
-    "commits": 564,
+    "commits": 566,
     "lang": "JavaScript",
     "url": "https://github.com/428lab/debug-shrine",
     "live": "https://d-shrine.jp"
@@ -404,7 +404,7 @@ window.REPOS = [
     "description": null,
     "date": "2017-03-24",
     "stars": 0,
-    "commits": 41,
+    "commits": 42,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/kojira.github.io",
     "live": null
@@ -423,8 +423,8 @@ window.REPOS = [
 ;
 window.TOTALS = {
   "projects": 76,
-  "stars": 89,
-  "commits": 5034,
+  "stars": 88,
+  "commits": 5041,
   "since": 2010
 }
 ;
