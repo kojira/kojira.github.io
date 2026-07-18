@@ -4,8 +4,8 @@ window.REPOS = [
     "description": null,
     "date": "2026-07-08",
     "stars": 0,
-    "commits": 23,
-    "lang": "TypeScript",
+    "commits": 33,
+    "lang": "C++",
     "url": "https://github.com/428lab/kuda",
     "live": null
   },
@@ -14,7 +14,7 @@ window.REPOS = [
     "description": "Sanitized OpenCrab repository",
     "date": "2026-06-28",
     "stars": 0,
-    "commits": 364,
+    "commits": 366,
     "lang": "Rust",
     "url": "https://github.com/kojira/opencrab",
     "live": null
@@ -364,7 +364,7 @@ window.REPOS = [
     "description": null,
     "date": "2023-02-23",
     "stars": 1,
-    "commits": 1233,
+    "commits": 1234,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/kojira",
     "live": null
@@ -383,8 +383,8 @@ window.REPOS = [
     "name": "428lab/debug-shrine",
     "description": "Shrine-themed web app that tracks members GitHub activity (Firebase auth + Firestore) and grants titles/achievements. A Yotsuya-lab project.",
     "date": "2021-11-25",
-    "stars": 18,
-    "commits": 567,
+    "stars": 19,
+    "commits": 572,
     "lang": "JavaScript",
     "url": "https://github.com/428lab/debug-shrine",
     "live": "https://d-shrine.jp"
@@ -404,7 +404,7 @@ window.REPOS = [
     "description": null,
     "date": "2017-03-24",
     "stars": 0,
-    "commits": 43,
+    "commits": 44,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/kojira.github.io",
     "live": null
@@ -422,9 +422,9 @@ window.REPOS = [
 ]
 ;
 window.TOTALS = {
-  "projects": 76,
-  "stars": 88,
-  "commits": 5045,
+  "projects": 77,
+  "stars": 89,
+  "commits": 5066,
   "since": 2010
 }
 ;
