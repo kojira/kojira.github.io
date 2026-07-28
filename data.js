@@ -14,7 +14,7 @@ window.REPOS = [
     "description": "Sanitized OpenCrab repository",
     "date": "2026-06-28",
     "stars": 0,
-    "commits": 430,
+    "commits": 435,
     "lang": "Rust",
     "url": "https://github.com/kojira/opencrab",
     "live": null
@@ -74,7 +74,7 @@ window.REPOS = [
     "description": "All-in-one event-ops platform — announce, recruit, run, score and award hackathons and any event, with real-time presentation and scoring.",
     "date": "2026-05-30",
     "stars": 0,
-    "commits": 172,
+    "commits": 183,
     "lang": "TypeScript",
     "url": "https://github.com/428lab/events",
     "live": "https://events.kojira.io"
@@ -364,7 +364,7 @@ window.REPOS = [
     "description": null,
     "date": "2023-02-23",
     "stars": 1,
-    "commits": 1249,
+    "commits": 1251,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/kojira",
     "live": null
@@ -404,7 +404,7 @@ window.REPOS = [
     "description": null,
     "date": "2017-03-24",
     "stars": 0,
-    "commits": 53,
+    "commits": 54,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/kojira.github.io",
     "live": null
@@ -424,7 +424,7 @@ window.REPOS = [
 window.TOTALS = {
   "projects": 77,
   "stars": 90,
-  "commits": 5206,
+  "commits": 5225,
   "since": 2010
 }
 ;
