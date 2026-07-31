@@ -14,7 +14,7 @@ window.REPOS = [
     "description": "Sanitized OpenCrab repository",
     "date": "2026-06-28",
     "stars": 0,
-    "commits": 447,
+    "commits": 452,
     "lang": "Rust",
     "url": "https://github.com/kojira/opencrab",
     "live": null
@@ -233,7 +233,7 @@ window.REPOS = [
     "name": "NostrDraw",
     "description": null,
     "date": "2025-12-26",
-    "stars": 3,
+    "stars": 4,
     "commits": 202,
     "lang": "TypeScript",
     "url": "https://github.com/kojira/NostrDraw",
@@ -374,7 +374,7 @@ window.REPOS = [
     "description": null,
     "date": "2023-02-23",
     "stars": 1,
-    "commits": 1255,
+    "commits": 1257,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/kojira",
     "live": null
@@ -414,7 +414,7 @@ window.REPOS = [
     "description": null,
     "date": "2017-03-24",
     "stars": 0,
-    "commits": 56,
+    "commits": 57,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/kojira.github.io",
     "live": null
@@ -433,8 +433,8 @@ window.REPOS = [
 ;
 window.TOTALS = {
   "projects": 77,
-  "stars": 90,
-  "commits": 5316,
+  "stars": 91,
+  "commits": 5324,
   "since": 2010
 }
 ;
