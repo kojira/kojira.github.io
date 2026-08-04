@@ -1,5 +1,15 @@
 window.REPOS = [
   {
+    "name": "nostr-relay-gate",
+    "description": "Access-control gate in front of a Nostr relay (strfry): NIP-42 auth + NIP-70 protected-event enforcement",
+    "date": "2026-08-04",
+    "stars": 0,
+    "commits": 8,
+    "lang": "Rust",
+    "url": "https://github.com/kojira/nostr-relay-gate",
+    "live": null
+  },
+  {
     "name": "428lab/kuda",
     "description": null,
     "date": "2026-07-08",
@@ -14,7 +24,7 @@ window.REPOS = [
     "description": "Sanitized OpenCrab repository",
     "date": "2026-06-28",
     "stars": 1,
-    "commits": 480,
+    "commits": 490,
     "lang": "Rust",
     "url": "https://github.com/kojira/opencrab",
     "live": null
@@ -84,7 +94,7 @@ window.REPOS = [
     "description": "All-in-one event-ops platform — announce, recruit, run, score and award hackathons and any event, with real-time presentation and scoring.",
     "date": "2026-05-30",
     "stars": 0,
-    "commits": 390,
+    "commits": 479,
     "lang": "TypeScript",
     "url": "https://github.com/428lab/events",
     "live": "https://events.kojira.io"
@@ -374,7 +384,7 @@ window.REPOS = [
     "description": null,
     "date": "2023-02-23",
     "stars": 1,
-    "commits": 1263,
+    "commits": 1265,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/kojira",
     "live": null
@@ -394,7 +404,7 @@ window.REPOS = [
     "description": "Shrine-themed web app that tracks members GitHub activity (Firebase auth + Firestore) and grants titles/achievements. A Yotsuya-lab project.",
     "date": "2021-11-25",
     "stars": 19,
-    "commits": 622,
+    "commits": 623,
     "lang": "Go",
     "url": "https://github.com/428lab/debug-shrine",
     "live": "https://d-shrine.jp"
@@ -414,7 +424,7 @@ window.REPOS = [
     "description": null,
     "date": "2017-03-24",
     "stars": 0,
-    "commits": 60,
+    "commits": 61,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/kojira.github.io",
     "live": null
@@ -432,9 +442,9 @@ window.REPOS = [
 ]
 ;
 window.TOTALS = {
-  "projects": 77,
+  "projects": 78,
   "stars": 92,
-  "commits": 5515,
+  "commits": 5626,
   "since": 2010
 }
 ;
