@@ -1,11 +1,16 @@
 #!/usr/bin/env bash
-# Regenerate data.js from the GitHub API.
+# Regenerate portfolio data and history assets.
+#  - data.js: GitHub API からプロジェクトタイムライン＋サマリー集計を生成。
+#  - history.js / index.html: history.jsonl を正として、クライアント用データと
+#    SEO向けの静的HISTORYタイムラインを生成。
+#
+# Project data:
 #  - 自分(USER)の public・non-fork repo のうち「notable」なもの。
 #  - 加えて、どこの org であっても INCLUDE_TOPIC トピックの付いた repo を取り込む
 #    （org repo には「作成者」フィールドが無いため、出したいものは自分でトピックを付ける）。
 # リポジトリ名・org 名はこのスクリプトに一切直書きしない。表示テキスト/リンク/表示可否は
 # すべて GitHub 側のメタデータが正（description / homepage / topics）。
-# Requires: gh (authenticated), jq.
+# Requires: gh (authenticated), jq, python3.
 set -euo pipefail
 USER="${1:-kojira}"
 MINCOMMITS=2
@@ -120,3 +125,89 @@ jq -s '(.[0] + .[1]) | unique_by(.url) | {
 
 { printf "window.REPOS = "; cat /tmp/_all.json; printf ";\nwindow.TOTALS = "; cat /tmp/_totals.json; printf ";\n"; } > data.js
 echo "Wrote data.js with $(jq length /tmp/_all.json) repos (display) / totals: $(jq -c . /tmp/_totals.json)"
+
+# ---- Personal history -------------------------------------------------------
+# history.jsonl が唯一の編集元。1行1イベントのJSONとして管理し、
+# 1) history.js（ブラウザでHISTORYへ戻る際の再描画用）
+# 2) index.html 内のHISTORY:START/END区間（検索エンジンがJSなしで読める静的HTML）
+# を同時に生成する。
+if [[ ! -f history.jsonl ]]; then
+  echo "history.jsonl not found" >&2
+  exit 1
+fi
+
+# JSONL全行を検証し、日付の新しい順に正規化。
+jq -s 'sort_by(.date) | reverse' history.jsonl > /tmp/_history.json
+{ printf "window.HISTORY = "; cat /tmp/_history.json; printf ";\n"; } > history.js
+
+python3 <<'PY'
+import html
+import json
+import re
+from pathlib import Path
+
+history_path = Path("history.jsonl")
+index_path = Path("index.html")
+
+items = [json.loads(line) for line in history_path.read_text(encoding="utf-8").splitlines() if line.strip()]
+items.sort(key=lambda item: item.get("date", ""), reverse=True)
+
+def fmt_date(value: str) -> str:
+    parts = value.split("-")
+    if len(parts) == 1:
+        return parts[0]
+    if len(parts) == 2 or (len(parts) >= 3 and parts[2] == "01"):
+        return f"{parts[0]}.{parts[1]}"
+    return f"{parts[0]}.{parts[1]}.{parts[2]}"
+
+lines = []
+last_year = None
+for idx, item in enumerate(items):
+    date = str(item.get("date", ""))
+    year = date[:4]
+    if year != last_year:
+        lines.append(f'      <div class="year reveal"><span>{html.escape(year)}</span></div>')
+        last_year = year
+
+    side = "left" if idx % 2 == 0 else "right"
+    alt = " alt" if idx % 2 else ""
+    tags = "".join(
+        f'<span class="tag">{html.escape(str(tag))}</span>'
+        for tag in item.get("tags", [])
+    )
+    links = "".join(
+        f'<a class="source-link" href="{html.escape(str(link.get("url", "")), quote=True)}" '
+        f'target="_blank" rel="noopener">{html.escape(str(link.get("label", "Source")))} ↗</a>'
+        for link in item.get("links", [])
+        if link.get("url")
+    )
+    description = item.get("description")
+    desc_html = f'<p class="desc">{html.escape(str(description))}</p>' if description else ""
+
+    lines.extend([
+        f'      <div class="item {side} reveal{alt}">',
+        '        <article class="card history-card">',
+        f'          <div class="date">{html.escape(fmt_date(date))}</div>',
+        f'          <h3>{html.escape(str(item.get("title", "")))}</h3>',
+        f'          {desc_html}' if desc_html else '',
+        f'          <div class="meta history-meta">{tags}{links}</div>',
+        '        </article>',
+        '      </div>',
+    ])
+
+block = "\n".join(line for line in lines if line != "")
+text = index_path.read_text(encoding="utf-8")
+start = "<!-- HISTORY:START -->"
+end = "<!-- HISTORY:END -->"
+if start not in text or end not in text:
+    raise SystemExit("index.html is missing HISTORY generation markers")
+
+pattern = re.compile(re.escape(start) + r".*?" + re.escape(end), re.S)
+replacement = f"{start}\n{block}\n      {end}"
+text, count = pattern.subn(lambda _: replacement, text, count=1)
+if count != 1:
+    raise SystemExit("could not replace HISTORY block exactly once")
+index_path.write_text(text, encoding="utf-8")
+
+print(f"Wrote history.js and static history HTML with {len(items)} milestones")
+PY
