@@ -404,12 +404,13 @@ window.HISTORY = [
   },
   {
     "date": "2023-05-21",
-    "title": "『Hello Nostr! 先住民が教えるNostrの歩き方』を出展",
-    "description": "技術書典2023にNostrの技術同人誌を出展。",
+    "title": "世界初のNostr専門fanzine『Hello Nostr! 先住民が教えるNostrの歩き方』を出展",
+    "description": "技術書典2023に世界初のNostr専門fanzine（技術同人誌）として出展。2023年11月3日のNostrasiaで来日したJack Dorseyにも直接手渡した。",
     "tags": [
       "Nostr",
       "Book",
-      "Community"
+      "Community",
+      "World First"
     ],
     "links": [
       {
@@ -420,12 +421,13 @@ window.HISTORY = [
   },
   {
     "date": "2023-04-07",
-    "title": "Bluesky Meetupを開催",
-    "description": "四谷ラボでBlueskyの公式meetupを開催。",
+    "title": "世界初のBluesky Meetupを開催",
+    "description": "四谷ラボで世界初のBluesky Meetupを開催。",
     "tags": [
       "Bluesky",
       "Community",
-      "Event"
+      "Event",
+      "World First"
     ],
     "links": [
       {
@@ -436,12 +438,13 @@ window.HISTORY = [
   },
   {
     "date": "2023-02-22",
-    "title": "Nostr勉強会を開催",
-    "description": "四谷ラボでNostrをテーマにした勉強会を開催。",
+    "title": "世界初のNostr勉強会を開催",
+    "description": "四谷ラボで世界初のNostr勉強会を開催。",
     "tags": [
       "Nostr",
       "Community",
-      "Event"
+      "Event",
+      "World First"
     ],
     "links": [
       {
