@@ -1,8 +1,191 @@
 window.HISTORY = [
   {
+    "date": "2026-06-13",
+    "title": "Bluesky Meetup in Osaka vol.4で登壇",
+    "description": "Bluesky公式のMeetup in Osaka vol.4で登壇。",
+    "tags": [
+      "Bluesky",
+      "Talk",
+      "Community"
+    ],
+    "links": [
+      {
+        "label": "Event",
+        "url": "https://428lab.connpass.com/event/392907/"
+      }
+    ]
+  },
+  {
+    "date": "2026-06-11",
+    "title": "Interop 2026 AI Native Expoで自律型AIエージェントについて登壇",
+    "description": "「自律型AIエージェントは何を破壊するのか？」で登壇。",
+    "tags": [
+      "AI",
+      "Agent",
+      "Interop",
+      "Talk"
+    ],
+    "links": [
+      {
+        "label": "Session",
+        "url": "https://forest.f2ff.jp/introduction/12595?project_id=20260601"
+      }
+    ]
+  },
+  {
+    "date": "2026-06-11",
+    "title": "Interop 2026 AI Native ExpoでAIエージェント経済について登壇",
+    "description": "「AIエージェント経済は始まるのか？── 人間がAPIになる時代の仕事と市場」で登壇。",
+    "tags": [
+      "AI",
+      "Agent",
+      "Interop",
+      "Talk"
+    ],
+    "links": [
+      {
+        "label": "Session",
+        "url": "https://forest.f2ff.jp/introduction/12597?project_id=20260601"
+      }
+    ]
+  },
+  {
+    "date": "2026-05-30",
+    "title": "四谷ラボ ハッカソン No.1を企画・運営",
+    "description": "四谷ラボ ハッカソン No.1で企画、司会、運営を担当。",
+    "tags": [
+      "428Lab",
+      "Hackathon",
+      "Event",
+      "Community"
+    ],
+    "links": [
+      {
+        "label": "Event",
+        "url": "https://428lab.connpass.com/event/394465/"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-18",
+    "title": "Bluesky Hackathon in Tokyo Vol.1を企画・運営",
+    "description": "Bluesky公式のHackathon in Tokyo Vol.1で企画、司会、運営を担当。",
+    "tags": [
+      "Bluesky",
+      "Hackathon",
+      "Event",
+      "Community"
+    ],
+    "links": [
+      {
+        "label": "Event",
+        "url": "https://428lab.connpass.com/event/387583/"
+      }
+    ]
+  },
+  {
+    "date": "2026-03-01",
+    "title": "bitchatロングレンジ通信イベントを企画・運営",
+    "description": "都内でbitchatのロングレンジ通信を試すイベントを企画・運営。",
+    "tags": [
+      "bitchat",
+      "Event",
+      "Community"
+    ],
+    "links": [
+      {
+        "label": "Event",
+        "url": "https://428lab.connpass.com/event/384566/"
+      }
+    ]
+  },
+  {
+    "date": "2026-01-31",
+    "title": "バイブコーディング大会 No.1を運営",
+    "description": "バイブコーディング大会 No.1で運営、司会を担当。",
+    "tags": [
+      "AI",
+      "Coding",
+      "Event",
+      "Community"
+    ],
+    "links": [
+      {
+        "label": "Event",
+        "url": "https://428lab.connpass.com/event/382139/"
+      }
+    ]
+  },
+  {
+    "date": "2026-01-15",
+    "title": "AIプロトコル勉強会 No.2を運営・登壇",
+    "description": "AIプロトコル勉強会 No.2で運営と登壇を担当。",
+    "tags": [
+      "AI",
+      "Protocol",
+      "Event",
+      "Talk"
+    ],
+    "links": [
+      {
+        "label": "Event",
+        "url": "https://428lab.connpass.com/event/380108/"
+      }
+    ]
+  },
+  {
+    "date": "2025-11-26",
+    "title": "AIプロトコル勉強会 No.1を運営・登壇",
+    "description": "AIプロトコル勉強会 No.1で運営、司会、登壇、ライブ配信を担当。",
+    "tags": [
+      "AI",
+      "Protocol",
+      "Event",
+      "Talk"
+    ],
+    "links": [
+      {
+        "label": "Event",
+        "url": "https://428lab.connpass.com/event/374766/"
+      }
+    ]
+  },
+  {
+    "date": "2025-11-22",
+    "title": "Nostrasia 2025を企画・運営",
+    "description": "Nostrasia 2025で発起人、運営、ライブ配信を担当。",
+    "tags": [
+      "Nostr",
+      "Community",
+      "Event"
+    ],
+    "links": [
+      {
+        "label": "Site",
+        "url": "https://nostrasia.com/"
+      }
+    ]
+  },
+  {
+    "date": "2025-08-02",
+    "title": "Bluesky Meetup in Fukuoka vol.2を運営",
+    "description": "Bluesky Meetup in Fukuoka vol.2の運営を担当。",
+    "tags": [
+      "Bluesky",
+      "Community",
+      "Event"
+    ],
+    "links": [
+      {
+        "label": "Event",
+        "url": "https://428lab.connpass.com/event/360000/"
+      }
+    ]
+  },
+  {
     "date": "2025-07-16",
     "title": "第18回 GenAI 勉強会で登壇",
-    "description": "生成AIに関する勉強会で登壇。近年はAIを使った開発やエージェント活用にも活動領域を広げている。",
+    "description": "第18回 GenAI 勉強会で登壇。",
     "tags": [
       "AI",
       "Talk"
@@ -15,12 +198,29 @@ window.HISTORY = [
     ]
   },
   {
+    "date": "2025-06-28",
+    "title": "Bluesky Meetup in Osaka vol.3を運営",
+    "description": "Bluesky Meetup in Osaka vol.3で運営とアイディアソンの司会を担当。",
+    "tags": [
+      "Bluesky",
+      "Community",
+      "Event"
+    ],
+    "links": [
+      {
+        "label": "Event",
+        "url": "https://428lab.connpass.com/event/355011/"
+      }
+    ]
+  },
+  {
     "date": "2025-06-12",
-    "title": "Interop 2025 APPS JAPANでAI時代のWebと自動化を議論",
-    "description": "「Webの未来と自動化の行方：AI時代の\"働く\"と\"つくる\"を語る」に登壇。",
+    "title": "Interop 2025 APPS JAPANでAI時代のWebと自動化について登壇",
+    "description": "「Webの未来と自動化の行方：AI時代の\"働く\"と\"つくる\"を語る」で登壇。",
     "tags": [
       "AI",
       "Web",
+      "Interop",
       "Talk"
     ],
     "links": [
@@ -37,6 +237,7 @@ window.HISTORY = [
     "tags": [
       "AI",
       "Development",
+      "Interop",
       "Talk"
     ],
     "links": [
@@ -47,9 +248,42 @@ window.HISTORY = [
     ]
   },
   {
+    "date": "2025-05-31",
+    "title": "ゴリラ.vim #36を運営・登壇",
+    "description": "「ゴリラ.vim #36 ~ Vim x SNS ~」で運営、登壇、ライブ配信を担当。",
+    "tags": [
+      "Vim",
+      "SNS",
+      "Community",
+      "Talk"
+    ],
+    "links": [
+      {
+        "label": "Event",
+        "url": "https://gorillavim.connpass.com/event/353161/"
+      }
+    ]
+  },
+  {
+    "date": "2024-10-11",
+    "title": "Bluesky Meetup in Tokyo Vol.3を運営",
+    "description": "Bluesky Meetup in Tokyo Vol.3で運営とライブ配信を担当。",
+    "tags": [
+      "Bluesky",
+      "Community",
+      "Event"
+    ],
+    "links": [
+      {
+        "label": "Event",
+        "url": "https://428lab.connpass.com/event/331611/"
+      }
+    ]
+  },
+  {
     "date": "2024-09-23",
     "title": "Nostrasia 2024を企画・運営",
-    "description": "NostrコミュニティのイベントNostrasia 2024で、発起人・運営・ライブ配信を担当。",
+    "description": "Nostrasia 2024で発起人、運営、ライブ配信を担当。",
     "tags": [
       "Nostr",
       "Community",
@@ -63,9 +297,74 @@ window.HISTORY = [
     ]
   },
   {
+    "date": "2024-04-14",
+    "title": "Bluesky Meetup in Osaka Vol.2を運営",
+    "description": "Bluesky Meetup in Osaka Vol.2で運営とライブ配信を担当。",
+    "tags": [
+      "Bluesky",
+      "Community",
+      "Event"
+    ],
+    "links": [
+      {
+        "label": "Event",
+        "url": "https://428lab.connpass.com/event/313710/"
+      }
+    ]
+  },
+  {
+    "date": "2024-04-13",
+    "title": "Bluesky Meetup in Tokyo Vol.2を運営",
+    "description": "Bluesky Meetup in Tokyo Vol.2で運営とライブ配信を担当。",
+    "tags": [
+      "Bluesky",
+      "Community",
+      "Event"
+    ],
+    "links": [
+      {
+        "label": "Event",
+        "url": "https://428lab.connpass.com/event/312335/"
+      }
+    ]
+  },
+  {
+    "date": "2024-02-10",
+    "title": "ゴリラ.vim #30を運営",
+    "description": "「ゴリラ.vim #30 ~ 四谷ラボコラボ ~」で運営とライブ配信を担当。",
+    "tags": [
+      "Vim",
+      "428Lab",
+      "Community",
+      "Event"
+    ],
+    "links": [
+      {
+        "label": "Event",
+        "url": "https://gorillavim.connpass.com/event/307622/"
+      }
+    ]
+  },
+  {
+    "date": "2023-12-08",
+    "title": "新時代の分散型SNS勉強会を運営",
+    "description": "新時代の分散型SNS勉強会で運営とライブ配信を担当。",
+    "tags": [
+      "SNS",
+      "Community",
+      "Event"
+    ],
+    "links": [
+      {
+        "label": "Event",
+        "url": "https://428lab.connpass.com/event/300313/"
+      }
+    ]
+  },
+  {
     "date": "2023-11-01",
     "title": "Nostrasiaで登壇",
-    "description": "Nostrの国際イベントNostrasiaで登壇。",
+    "description": "Nostrasiaの1日目に登壇。",
     "tags": [
       "Nostr",
       "Talk",
@@ -80,8 +379,8 @@ window.HISTORY = [
   },
   {
     "date": "2023-07-07",
-    "title": "Nostrへの活動に対して500万satoshiを受領",
-    "description": "Nostr創始者fiatjafから、Nostrでの活動に対して500万satoshiを受領。",
+    "title": "Nostrでの活動に対して500万satoshiを受領",
+    "description": "fiatjafから、Nostrでの活動に対して500万satoshiを受領。",
     "tags": [
       "Nostr",
       "Community"
@@ -94,9 +393,19 @@ window.HISTORY = [
     ]
   },
   {
+    "date": "2023-06-14",
+    "title": "Interop 2023 APPS JAPANで分散SNSについて講演",
+    "description": "Interop 2023 APPS JAPANで分散SNSについて講演。",
+    "tags": [
+      "SNS",
+      "Interop",
+      "Talk"
+    ]
+  },
+  {
     "date": "2023-05-21",
     "title": "『Hello Nostr! 先住民が教えるNostrの歩き方』を出展",
-    "description": "技術書典でNostrの技術同人誌を出展。",
+    "description": "技術書典2023にNostrの技術同人誌を出展。",
     "tags": [
       "Nostr",
       "Book",
@@ -112,7 +421,7 @@ window.HISTORY = [
   {
     "date": "2023-04-07",
     "title": "Bluesky Meetupを開催",
-    "description": "四谷ラボでBlueskyの公式meetupを開催。以後、東京・大阪・福岡などで継続的に関連イベントを運営。",
+    "description": "四谷ラボでBlueskyの公式meetupを開催。",
     "tags": [
       "Bluesky",
       "Community",
@@ -128,7 +437,7 @@ window.HISTORY = [
   {
     "date": "2023-02-22",
     "title": "Nostr勉強会を開催",
-    "description": "四谷ラボでNostrをテーマにした勉強会を開催。以後、分散SNS関連のイベントや開発活動を継続。",
+    "description": "四谷ラボでNostrをテーマにした勉強会を開催。",
     "tags": [
       "Nostr",
       "Community",
@@ -151,18 +460,74 @@ window.HISTORY = [
     ]
   },
   {
+    "date": "2019-06-13",
+    "title": "Interop 2019 APPS JAPANでブロックチェーンについて講演",
+    "description": "Interop 2019 APPS JAPANでブロックチェーン技術について講演。",
+    "tags": [
+      "Blockchain",
+      "Interop",
+      "Talk"
+    ]
+  },
+  {
+    "date": "2018-12-31",
+    "title": "Singularity株式会社を退社",
+    "description": "Singularity株式会社を退社。",
+    "tags": [
+      "Career",
+      "Company"
+    ]
+  },
+  {
+    "date": "2018-11-01",
+    "title": "全力機械株式会社の取締役軍師に就任",
+    "description": "全力機械株式会社の取締役軍師に就任。",
+    "tags": [
+      "Career",
+      "Company"
+    ]
+  },
+  {
+    "date": "2018-08-01",
+    "title": "Mona coinベースのAltコイン運営に開発者として参加",
+    "description": "Mona coinベースのAltコイン運営に開発者として参加。",
+    "tags": [
+      "Blockchain",
+      "Development"
+    ]
+  },
+  {
+    "date": "2018-06-15",
+    "title": "Interop 2018 APPS JAPANでブロックチェーンについて講演",
+    "description": "Interop 2018 APPS JAPANでブロックチェーン技術について講演。",
+    "tags": [
+      "Blockchain",
+      "Interop",
+      "Talk"
+    ]
+  },
+  {
     "date": "2018-05-01",
     "title": "NPO日本Androidの会 理事に就任",
-    "description": "日本Androidの会の活動に継続して関わり、理事に就任。",
+    "description": "NPO日本Androidの会の理事に就任。",
     "tags": [
       "Android",
       "Community"
     ]
   },
   {
+    "date": "2018-02-01",
+    "title": "PeercoinベースのAltコイン運営に開発者として参加",
+    "description": "PeercoinベースのAltコイン運営を引き継ぎ、開発者として参加。",
+    "tags": [
+      "Blockchain",
+      "Development"
+    ]
+  },
+  {
     "date": "2017-04-13",
     "title": "全脳アーキテクチャ・サポーターズ リーダーに就任",
-    "description": "人工知能・全脳アーキテクチャ関連のコミュニティ活動に参加。",
+    "description": "全脳アーキテクチャ・サポーターズのリーダーに就任。",
     "tags": [
       "AI",
       "Community"
@@ -174,13 +539,23 @@ window.HISTORY = [
     "description": "Singularity株式会社を設立し、代表取締役に就任。",
     "tags": [
       "Company",
-      "AI"
+      "AI",
+      "Career"
+    ]
+  },
+  {
+    "date": "2016-05-01",
+    "title": "フリーランスとして活動",
+    "description": "ブリリアントサービス退社後、Singularity株式会社設立までフリーランスとして活動。",
+    "tags": [
+      "Career",
+      "Development"
     ]
   },
   {
     "date": "2016-04-30",
     "title": "ブリリアントサービスを退社",
-    "description": "2010年から取締役・品川事業所所長を務めたブリリアントサービスを退社。",
+    "description": "株式会社ブリリアントサービスを退社。",
     "tags": [
       "Brilliant Service",
       "Career"
@@ -189,9 +564,10 @@ window.HISTORY = [
   {
     "date": "2015-06-10",
     "title": "Interop 2015 APPS JAPANでAndroid TVについて講演",
-    "description": "Android TVをテーマに講演。",
+    "description": "Interop 2015 APPS JAPANでAndroid TVについて講演。",
     "tags": [
       "Android",
+      "Interop",
       "Talk"
     ]
   },
@@ -207,7 +583,7 @@ window.HISTORY = [
   {
     "date": "2014-01-17",
     "title": "ジュエルセイバーの素材をフリーコンテンツ化",
-    "description": "『星宝転生ジュエルセイバー』で制作した多数の素材を、再利用可能なフリーコンテンツとして公開。",
+    "description": "『星宝転生ジュエルセイバー』の多数の素材をフリーコンテンツとして公開。",
     "tags": [
       "Game",
       "Open Content"
@@ -222,7 +598,7 @@ window.HISTORY = [
   {
     "date": "2013-06-19",
     "title": "関東Firefox OS勉強会を開催",
-    "description": "Firefox OSをテーマにした勉強会を立ち上げ、その後も継続開催。",
+    "description": "Firefox OSをテーマにした勉強会を立ち上げ、その後10回以上開催。",
     "tags": [
       "Firefox OS",
       "Community",
@@ -253,7 +629,7 @@ window.HISTORY = [
   {
     "date": "2011-11-01",
     "title": "Google Developer Day 2011でNFC QUESTを展示",
-    "description": "NFCを使った体験型コンテンツNFC QUESTを展示。",
+    "description": "Google Developer Day 2011でNFC QUESTを展示。",
     "tags": [
       "NFC",
       "Google",
@@ -279,7 +655,7 @@ window.HISTORY = [
   {
     "date": "2010-11-16",
     "title": "Google Developer Day PragueでRic Androidを展示",
-    "description": "Androidマスコット型ロボット『Ric Android』をGoogle Developer Day Pragueで展示し、操作を担当。",
+    "description": "Ric AndroidをGoogle Developer Day Pragueで展示し、操作を担当。",
     "tags": [
       "Android",
       "Google",
@@ -311,7 +687,7 @@ window.HISTORY = [
   {
     "date": "2010-09-28",
     "title": "Google Developer Day 2010でRic Androidを展示",
-    "description": "内部ソフトウェアを担当したAndroidマスコット型ロボット『Ric Android』を展示し、会場で操作を担当。",
+    "description": "内部ソフトウェアを担当したAndroidマスコット型ロボット『Ric Android』を展示し、操作を担当。",
     "tags": [
       "Android",
       "Google",
@@ -330,7 +706,7 @@ window.HISTORY = [
   {
     "date": "2010-04-01",
     "title": "ブリリアントサービス取締役・品川事業所所長に就任",
-    "description": "フリーランス期間を経て、株式会社ブリリアントサービスの取締役・品川事業所所長に就任。",
+    "description": "株式会社ブリリアントサービスの取締役・品川事業所所長に就任。",
     "tags": [
       "Brilliant Service",
       "Career"
@@ -339,7 +715,7 @@ window.HISTORY = [
   {
     "date": "2010-03-11",
     "title": "Google DevFest 2010 Japanでスタッフ",
-    "description": "Androidのオフィスアワーを担当。",
+    "description": "Google DevFest 2010 JapanでスタッフとしてAndroidのオフィスアワーを担当。",
     "tags": [
       "Android",
       "Google",
@@ -353,9 +729,48 @@ window.HISTORY = [
     ]
   },
   {
+    "date": "2010-02-19",
+    "title": "大垣のソフトピアでAndroidセミナー講師",
+    "description": "岐阜県大垣市のソフトピアでAndroidセミナーの講師を担当。",
+    "tags": [
+      "Android",
+      "Talk",
+      "Education"
+    ]
+  },
+  {
+    "date": "2010-01-20",
+    "title": "熊本でAndroid開発者向けセミナー講師",
+    "description": "1月20日・21日に熊本でAndroid開発者向けセミナーの講師を担当。",
+    "tags": [
+      "Android",
+      "Talk",
+      "Education"
+    ]
+  },
+  {
+    "date": "2010-01-01",
+    "title": "Androidなんとか部を多数立ち上げる",
+    "description": "カレー部、酒部、就活部、人柱部、まとめ買い部、アニメ部、カラオケ部、屋形船部など、Androidコミュニティ周辺で40近い「なんとか部」を作った。",
+    "tags": [
+      "Android",
+      "Community"
+    ]
+  },
+  {
+    "date": "2009-12-09",
+    "title": "Tokyo-GTUG Night #5でライトニングトーク",
+    "description": "「HTML5 on Android」をテーマにライトニングトークで登壇。",
+    "tags": [
+      "Android",
+      "HTML5",
+      "Talk"
+    ]
+  },
+  {
     "date": "2009-12-01",
     "title": "『スポットメッセージ』がAndroid Developer Challenge 2で入賞",
-    "description": "開発に携わったAndroidアプリ『スポットメッセージ』が、Android Developer Challenge 2のSocialカテゴリで入賞。",
+    "description": "開発に携わったAndroidアプリ『スポットメッセージ』がAndroid Developer Challenge 2のSocialカテゴリで入賞。",
     "tags": [
       "Android",
       "Development",
@@ -363,9 +778,19 @@ window.HISTORY = [
     ]
   },
   {
-    "date": "2009-08-14",
+    "date": "2009-10-19",
+    "title": "日本Androidの会で『スポットメッセージ』について登壇",
+    "description": "日本Androidの会10月イベントで、ADC2出展アプリ『スポットメッセージ』の開発について登壇。",
+    "tags": [
+      "Android",
+      "Talk",
+      "ADC2"
+    ]
+  },
+  {
+    "date": "2009-09-05",
     "title": "京都GTUG Android Hackathonで講師・Tutor",
-    "description": "京都GTUGのAndroid Hackathonで講師・Tutorを担当。8月29日、9月5日にも同様の役割で参加。",
+    "description": "京都GTUGのAndroid Hackathonで講師・Tutorを担当。",
     "tags": [
       "Android",
       "Hackathon",
@@ -373,8 +798,46 @@ window.HISTORY = [
     ]
   },
   {
+    "date": "2009-08-29",
+    "title": "京都GTUG Android Hackathonで講師・Tutor",
+    "description": "京都GTUGのAndroid Hackathonで講師・Tutorを担当。",
+    "tags": [
+      "Android",
+      "Hackathon",
+      "Tutor"
+    ]
+  },
+  {
+    "date": "2009-08-14",
+    "title": "京都GTUG Android Hackathonで講師・Tutor",
+    "description": "京都GTUGのAndroid Hackathonで講師・Tutorを担当。",
+    "tags": [
+      "Android",
+      "Hackathon",
+      "Tutor"
+    ]
+  },
+  {
+    "date": "2009-07-09",
+    "title": "日経LinuxにAndroid記事を執筆",
+    "description": "日経Linux 2009年8月号にAndroidの記事を執筆。",
+    "tags": [
+      "Android",
+      "Writing"
+    ]
+  },
+  {
+    "date": "2009-06-18",
+    "title": "モバイル夜間大学で『Androidがもたらす未来』を講演",
+    "description": "モバイル夜間大学で「Androidがもたらす未来」について講演。",
+    "tags": [
+      "Android",
+      "Talk"
+    ]
+  },
+  {
     "date": "2009-06-10",
-    "title": "Google Developer Day 2009 Android Hackathonに参加",
+    "title": "Google Developer Day 2009 Android HackathonでTutor",
     "description": "Android HackathonでTutorを担当。会場ではカメラ撮影も担当した。",
     "tags": [
       "Android",
@@ -393,11 +856,27 @@ window.HISTORY = [
   {
     "date": "2009-06-09",
     "title": "Google Developer Dayでライトニングトーク",
-    "description": "『Androidによって変わる日常生活』をテーマにライトニングトークで登壇。",
+    "description": "「Androidによって変わる日常生活」をテーマにライトニングトークで登壇。",
     "tags": [
       "Android",
       "Google",
       "Talk"
+    ]
+  },
+  {
+    "date": "2009-05-18",
+    "title": "Google Developer Dayのオフィシャルサポーターに選出",
+    "description": "Google Developer Dayのオフィシャルサポーターに選出。",
+    "tags": [
+      "Android",
+      "Google",
+      "Community"
+    ],
+    "links": [
+      {
+        "label": "Blog",
+        "url": "https://bs-android.hatenadiary.org/entry/20090518/1242659719"
+      }
     ]
   },
   {
@@ -442,9 +921,19 @@ window.HISTORY = [
     ]
   },
   {
+    "date": "2008-11-10",
+    "title": "日本Androidの会11月イベントで登壇",
+    "description": "VMware上でAndroidをコンパイルする方法を実演。",
+    "tags": [
+      "Android",
+      "Talk",
+      "Community"
+    ]
+  },
+  {
     "date": "2008-09-12",
     "title": "日本Androidの会 組み込みWGリーダーに就任",
-    "description": "日本Androidの会で組み込み分野のワーキンググループを担当。",
+    "description": "日本Androidの会で組み込みWGリーダーに就任。",
     "tags": [
       "Android",
       "Embedded",
@@ -469,6 +958,16 @@ window.HISTORY = [
       "Android",
       "Embedded",
       "Talk"
+    ]
+  },
+  {
+    "date": "2008-05-16",
+    "title": "ESECでAndroid実機デモを紹介",
+    "description": "ESECのアットマークテクノのブースで、Android実機上のプレゼンアプリを作成して紹介。",
+    "tags": [
+      "Android",
+      "Embedded",
+      "Exhibition"
     ]
   },
   {
@@ -517,7 +1016,7 @@ window.HISTORY = [
   {
     "date": "2008-02-05",
     "title": "Armadillo-500へのAndroidポーティングを公開",
-    "description": "組み込みボードArmadillo-500でAndroidを動作させ、動画を公開。",
+    "description": "Armadillo-500でAndroidを動作させ、動画を公開。",
     "tags": [
       "Android",
       "Embedded",
@@ -570,9 +1069,25 @@ window.HISTORY = [
     ]
   },
   {
+    "date": "1998-12-01",
+    "title": "深夜居酒屋を手伝う",
+    "description": "前職を離れた後、深夜居酒屋を手伝った。",
+    "tags": [
+      "Career"
+    ]
+  },
+  {
+    "date": "1998-05-01",
+    "title": "大阪・京橋の割烹で勤務",
+    "description": "大阪・京橋の割烹で接客と調理を担当。",
+    "tags": [
+      "Career"
+    ]
+  },
+  {
     "date": "1995-08-01",
-    "title": "飲食業で働く",
-    "description": "居酒屋や割烹で接客・調理を担当。1999年にソフトウェア開発の仕事へ移るまで飲食業に従事した。",
+    "title": "居酒屋で接客・調理を担当",
+    "description": "居酒屋の風来坊で接客と調理を担当。1998年4月まで勤務。",
     "tags": [
       "Career"
     ]
