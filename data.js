@@ -1,5 +1,15 @@
 window.REPOS = [
   {
+    "name": "nosmaps",
+    "description": "Three interactive static UI concepts for discovering Nostr tools",
+    "date": "2026-08-15",
+    "stars": 0,
+    "commits": 15,
+    "lang": "JavaScript",
+    "url": "https://github.com/kojira/nosmaps",
+    "live": null
+  },
+  {
     "name": "nostr-relay-gate",
     "description": "Access-control gate in front of a Nostr relay (strfry): NIP-42 auth + NIP-70 protected-event enforcement",
     "date": "2026-08-04",
@@ -24,7 +34,7 @@ window.REPOS = [
     "description": "Sanitized OpenCrab repository",
     "date": "2026-06-28",
     "stars": 1,
-    "commits": 604,
+    "commits": 611,
     "lang": "Rust",
     "url": "https://github.com/kojira/opencrab",
     "live": null
@@ -384,7 +394,7 @@ window.REPOS = [
     "description": null,
     "date": "2023-02-23",
     "stars": 1,
-    "commits": 1285,
+    "commits": 1289,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/kojira",
     "live": null
@@ -424,7 +434,7 @@ window.REPOS = [
     "description": null,
     "date": "2017-03-24",
     "stars": 0,
-    "commits": 76,
+    "commits": 77,
     "lang": "HTML",
     "url": "https://github.com/kojira/kojira.github.io",
     "live": null
@@ -442,9 +452,9 @@ window.REPOS = [
 ]
 ;
 window.TOTALS = {
-  "projects": 79,
+  "projects": 80,
   "stars": 93,
-  "commits": 6016,
+  "commits": 6043,
   "since": 2010
 }
 ;
