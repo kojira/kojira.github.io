@@ -4,7 +4,7 @@ window.REPOS = [
     "description": "Three interactive static UI concepts for discovering Nostr tools",
     "date": "2026-08-15",
     "stars": 0,
-    "commits": 15,
+    "commits": 20,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/nosmaps",
     "live": null
@@ -34,7 +34,7 @@ window.REPOS = [
     "description": "Sanitized OpenCrab repository",
     "date": "2026-06-28",
     "stars": 1,
-    "commits": 611,
+    "commits": 616,
     "lang": "Rust",
     "url": "https://github.com/kojira/opencrab",
     "live": null
@@ -134,7 +134,7 @@ window.REPOS = [
     "description": "OpenAI-compatible proxy for Anthropic Claude via OAuth (hermit crab borrows the shell)",
     "date": "2026-03-21",
     "stars": 0,
-    "commits": 14,
+    "commits": 23,
     "lang": "TypeScript",
     "url": "https://github.com/kojira/hermit-shell",
     "live": null
@@ -383,7 +383,7 @@ window.REPOS = [
     "name": "nostr-chan",
     "description": null,
     "date": "2023-02-28",
-    "stars": 14,
+    "stars": 15,
     "commits": 335,
     "lang": "Rust",
     "url": "https://github.com/kojira/nostr-chan",
@@ -394,7 +394,7 @@ window.REPOS = [
     "description": null,
     "date": "2023-02-23",
     "stars": 1,
-    "commits": 1289,
+    "commits": 1291,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/kojira",
     "live": null
@@ -434,7 +434,7 @@ window.REPOS = [
     "description": null,
     "date": "2017-03-24",
     "stars": 0,
-    "commits": 77,
+    "commits": 78,
     "lang": "HTML",
     "url": "https://github.com/kojira/kojira.github.io",
     "live": null
@@ -453,8 +453,8 @@ window.REPOS = [
 ;
 window.TOTALS = {
   "projects": 80,
-  "stars": 93,
-  "commits": 6043,
+  "stars": 94,
+  "commits": 6065,
   "since": 2010
 }
 ;
