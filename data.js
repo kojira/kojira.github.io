@@ -214,7 +214,7 @@ window.REPOS = [
     "description": "A Nostr CLI tool built by AI agent のすたろう ⚡ Written in Rust.",
     "date": "2026-02-08",
     "stars": 0,
-    "commits": 36,
+    "commits": 37,
     "lang": "Rust",
     "url": "https://github.com/kojira/nostaro",
     "live": null
@@ -394,7 +394,7 @@ window.REPOS = [
     "description": null,
     "date": "2023-02-23",
     "stars": 1,
-    "commits": 1315,
+    "commits": 1317,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/kojira",
     "live": null
@@ -434,7 +434,7 @@ window.REPOS = [
     "description": null,
     "date": "2017-03-24",
     "stars": 0,
-    "commits": 90,
+    "commits": 91,
     "lang": "HTML",
     "url": "https://github.com/kojira/kojira.github.io",
     "live": null
@@ -454,7 +454,7 @@ window.REPOS = [
 window.TOTALS = {
   "projects": 80,
   "stars": 94,
-  "commits": 6298,
+  "commits": 6302,
   "since": 2010
 }
 ;
