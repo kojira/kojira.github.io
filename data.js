@@ -104,7 +104,7 @@ window.REPOS = [
     "description": "All-in-one event-ops platform — announce, recruit, run, score and award hackathons and any event, with real-time presentation and scoring.",
     "date": "2026-05-30",
     "stars": 0,
-    "commits": 799,
+    "commits": 815,
     "lang": "TypeScript",
     "url": "https://github.com/428lab/events",
     "live": "https://events.kojira.io"
@@ -193,7 +193,7 @@ window.REPOS = [
     "name": "noscha-io",
     "description": "Lightning Network powered disposable email, subdomain, and NIP-05 service on Cloudflare Workers",
     "date": "2026-02-11",
-    "stars": 1,
+    "stars": 0,
     "commits": 53,
     "lang": "Rust",
     "url": "https://github.com/kojira/noscha-io",
@@ -394,7 +394,7 @@ window.REPOS = [
     "description": null,
     "date": "2023-02-23",
     "stars": 1,
-    "commits": 1319,
+    "commits": 1321,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/kojira",
     "live": null
@@ -434,7 +434,7 @@ window.REPOS = [
     "description": null,
     "date": "2017-03-24",
     "stars": 0,
-    "commits": 92,
+    "commits": 93,
     "lang": "HTML",
     "url": "https://github.com/kojira/kojira.github.io",
     "live": null
@@ -453,8 +453,8 @@ window.REPOS = [
 ;
 window.TOTALS = {
   "projects": 80,
-  "stars": 94,
-  "commits": 6305,
+  "stars": 93,
+  "commits": 6324,
   "since": 2010
 }
 ;
