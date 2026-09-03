@@ -14,7 +14,7 @@ window.REPOS = [
     "description": "Access-control gate in front of a Nostr relay (strfry): NIP-42 auth + NIP-70 protected-event enforcement",
     "date": "2026-08-04",
     "stars": 0,
-    "commits": 8,
+    "commits": 9,
     "lang": "Rust",
     "url": "https://github.com/kojira/nostr-relay-gate",
     "live": null
@@ -104,7 +104,7 @@ window.REPOS = [
     "description": "All-in-one event-ops platform — announce, recruit, run, score and award hackathons and any event, with real-time presentation and scoring.",
     "date": "2026-05-30",
     "stars": 0,
-    "commits": 826,
+    "commits": 832,
     "lang": "TypeScript",
     "url": "https://github.com/428lab/events",
     "live": "https://events.kojira.io"
@@ -394,7 +394,7 @@ window.REPOS = [
     "description": null,
     "date": "2023-02-23",
     "stars": 1,
-    "commits": 1323,
+    "commits": 1325,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/kojira",
     "live": null
@@ -434,7 +434,7 @@ window.REPOS = [
     "description": null,
     "date": "2017-03-24",
     "stars": 0,
-    "commits": 94,
+    "commits": 95,
     "lang": "HTML",
     "url": "https://github.com/kojira/kojira.github.io",
     "live": null
@@ -454,7 +454,7 @@ window.REPOS = [
 window.TOTALS = {
   "projects": 80,
   "stars": 93,
-  "commits": 6342,
+  "commits": 6352,
   "since": 2010
 }
 ;
