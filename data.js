@@ -1,5 +1,15 @@
 window.REPOS = [
   {
+    "name": "dreamx-studio",
+    "description": "Resource-aware web interface for DreamX-Creator on NVIDIA GB10",
+    "date": "2026-09-07",
+    "stars": 0,
+    "commits": 5,
+    "lang": "Python",
+    "url": "https://github.com/kojira/dreamx-studio",
+    "live": null
+  },
+  {
     "name": "nosmaps",
     "description": "Three interactive static UI concepts for discovering Nostr tools",
     "date": "2026-08-15",
@@ -394,7 +404,7 @@ window.REPOS = [
     "description": null,
     "date": "2023-02-23",
     "stars": 1,
-    "commits": 1331,
+    "commits": 1333,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/kojira",
     "live": null
@@ -434,7 +444,7 @@ window.REPOS = [
     "description": null,
     "date": "2017-03-24",
     "stars": 0,
-    "commits": 98,
+    "commits": 99,
     "lang": "HTML",
     "url": "https://github.com/kojira/kojira.github.io",
     "live": null
@@ -452,9 +462,9 @@ window.REPOS = [
 ]
 ;
 window.TOTALS = {
-  "projects": 80,
+  "projects": 81,
   "stars": 95,
-  "commits": 6403,
+  "commits": 6411,
   "since": 2010
 }
 ;
