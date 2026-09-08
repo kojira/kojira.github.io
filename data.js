@@ -4,7 +4,7 @@ window.REPOS = [
     "description": "Resource-aware web interface for DreamX-Creator on NVIDIA GB10",
     "date": "2026-09-07",
     "stars": 0,
-    "commits": 5,
+    "commits": 25,
     "lang": "Python",
     "url": "https://github.com/kojira/dreamx-studio",
     "live": null
@@ -44,7 +44,7 @@ window.REPOS = [
     "description": "Sanitized OpenCrab repository",
     "date": "2026-06-28",
     "stars": 1,
-    "commits": 646,
+    "commits": 917,
     "lang": "Rust",
     "url": "https://github.com/kojira/opencrab",
     "live": null
@@ -404,7 +404,7 @@ window.REPOS = [
     "description": null,
     "date": "2023-02-23",
     "stars": 1,
-    "commits": 1333,
+    "commits": 1335,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/kojira",
     "live": null
@@ -444,7 +444,7 @@ window.REPOS = [
     "description": null,
     "date": "2017-03-24",
     "stars": 0,
-    "commits": 99,
+    "commits": 100,
     "lang": "HTML",
     "url": "https://github.com/kojira/kojira.github.io",
     "live": null
@@ -464,7 +464,7 @@ window.REPOS = [
 window.TOTALS = {
   "projects": 81,
   "stars": 95,
-  "commits": 6411,
+  "commits": 6705,
   "since": 2010
 }
 ;
