@@ -44,7 +44,7 @@ window.REPOS = [
     "description": "Sanitized OpenCrab repository",
     "date": "2026-06-28",
     "stars": 1,
-    "commits": 983,
+    "commits": 995,
     "lang": "Rust",
     "url": "https://github.com/kojira/opencrab",
     "live": null
@@ -54,7 +54,7 @@ window.REPOS = [
     "description": "A strfry writePolicy plugin: per-pubkey rate limiting with auto-ban, kind-class aware (Rust)",
     "date": "2026-06-18",
     "stars": 0,
-    "commits": 6,
+    "commits": 9,
     "lang": "Rust",
     "url": "https://github.com/kojira/strfry-ratelimit",
     "live": null
@@ -114,7 +114,7 @@ window.REPOS = [
     "description": "All-in-one event-ops platform — announce, recruit, run, score and award hackathons and any event, with real-time presentation and scoring.",
     "date": "2026-05-30",
     "stars": 0,
-    "commits": 931,
+    "commits": 995,
     "lang": "TypeScript",
     "url": "https://github.com/428lab/events",
     "live": "https://events.kojira.io"
@@ -404,7 +404,7 @@ window.REPOS = [
     "description": null,
     "date": "2023-02-23",
     "stars": 1,
-    "commits": 1349,
+    "commits": 1353,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/kojira",
     "live": null
@@ -444,7 +444,7 @@ window.REPOS = [
     "description": null,
     "date": "2017-03-24",
     "stars": 0,
-    "commits": 106,
+    "commits": 107,
     "lang": "HTML",
     "url": "https://github.com/kojira/kojira.github.io",
     "live": null
@@ -464,7 +464,7 @@ window.REPOS = [
 window.TOTALS = {
   "projects": 81,
   "stars": 95,
-  "commits": 6849,
+  "commits": 6933,
   "since": 2010
 }
 ;
