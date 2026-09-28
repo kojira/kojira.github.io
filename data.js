@@ -44,7 +44,7 @@ window.REPOS = [
     "description": "Sanitized OpenCrab repository",
     "date": "2026-06-28",
     "stars": 1,
-    "commits": 1170,
+    "commits": 1185,
     "lang": "Rust",
     "url": "https://github.com/kojira/opencrab",
     "live": null
@@ -114,7 +114,7 @@ window.REPOS = [
     "description": "All-in-one event-ops platform — announce, recruit, run, score and award hackathons and any event, with real-time presentation and scoring.",
     "date": "2026-05-30",
     "stars": 0,
-    "commits": 1032,
+    "commits": 1033,
     "lang": "TypeScript",
     "url": "https://github.com/428lab/events",
     "live": "https://events.kojira.io"
@@ -144,7 +144,7 @@ window.REPOS = [
     "description": "OpenAI-compatible proxy for Anthropic Claude via OAuth (hermit crab borrows the shell)",
     "date": "2026-03-21",
     "stars": 2,
-    "commits": 51,
+    "commits": 53,
     "lang": "TypeScript",
     "url": "https://github.com/kojira/hermit-shell",
     "live": null
@@ -404,7 +404,7 @@ window.REPOS = [
     "description": null,
     "date": "2023-02-23",
     "stars": 1,
-    "commits": 1373,
+    "commits": 1375,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/kojira",
     "live": null
@@ -444,7 +444,7 @@ window.REPOS = [
     "description": null,
     "date": "2017-03-24",
     "stars": 0,
-    "commits": 117,
+    "commits": 118,
     "lang": "HTML",
     "url": "https://github.com/kojira/kojira.github.io",
     "live": null
@@ -462,9 +462,9 @@ window.REPOS = [
 ]
 ;
 window.TOTALS = {
-  "projects": 81,
+  "projects": 82,
   "stars": 95,
-  "commits": 7229,
+  "commits": 7252,
   "since": 2010
 }
 ;
