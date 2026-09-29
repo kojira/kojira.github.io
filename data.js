@@ -1,5 +1,15 @@
 window.REPOS = [
   {
+    "name": "mac-window-remote",
+    "description": "View and operate Mac windows from an iPhone over Tailscale: WebRTC video, trackpad-style input, special keys, quick window switching",
+    "date": "2026-09-28",
+    "stars": 1,
+    "commits": 83,
+    "lang": "Swift",
+    "url": "https://github.com/kojira/mac-window-remote",
+    "live": null
+  },
+  {
     "name": "dreamx-studio",
     "description": "Resource-aware web interface for DreamX-Creator on NVIDIA GB10",
     "date": "2026-09-07",
@@ -44,7 +54,7 @@ window.REPOS = [
     "description": "Sanitized OpenCrab repository",
     "date": "2026-06-28",
     "stars": 1,
-    "commits": 1185,
+    "commits": 1187,
     "lang": "Rust",
     "url": "https://github.com/kojira/opencrab",
     "live": null
@@ -114,7 +124,7 @@ window.REPOS = [
     "description": "All-in-one event-ops platform — announce, recruit, run, score and award hackathons and any event, with real-time presentation and scoring.",
     "date": "2026-05-30",
     "stars": 0,
-    "commits": 1033,
+    "commits": 1037,
     "lang": "TypeScript",
     "url": "https://github.com/428lab/events",
     "live": "https://events.kojira.io"
@@ -144,7 +154,7 @@ window.REPOS = [
     "description": "OpenAI-compatible proxy for Anthropic Claude via OAuth (hermit crab borrows the shell)",
     "date": "2026-03-21",
     "stars": 2,
-    "commits": 53,
+    "commits": 57,
     "lang": "TypeScript",
     "url": "https://github.com/kojira/hermit-shell",
     "live": null
@@ -404,7 +414,7 @@ window.REPOS = [
     "description": null,
     "date": "2023-02-23",
     "stars": 1,
-    "commits": 1375,
+    "commits": 1377,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/kojira",
     "live": null
@@ -444,7 +454,7 @@ window.REPOS = [
     "description": null,
     "date": "2017-03-24",
     "stars": 0,
-    "commits": 118,
+    "commits": 119,
     "lang": "HTML",
     "url": "https://github.com/kojira/kojira.github.io",
     "live": null
@@ -462,9 +472,9 @@ window.REPOS = [
 ]
 ;
 window.TOTALS = {
-  "projects": 82,
-  "stars": 95,
-  "commits": 7252,
+  "projects": 83,
+  "stars": 96,
+  "commits": 7348,
   "since": 2010
 }
 ;
