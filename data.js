@@ -4,7 +4,7 @@ window.REPOS = [
     "description": "View and operate Mac windows from an iPhone over Tailscale: WebRTC video, trackpad-style input, special keys, quick window switching",
     "date": "2026-09-28",
     "stars": 1,
-    "commits": 162,
+    "commits": 168,
     "lang": "Swift",
     "url": "https://github.com/kojira/mac-window-remote",
     "live": null
@@ -54,7 +54,7 @@ window.REPOS = [
     "description": "Sanitized OpenCrab repository",
     "date": "2026-06-28",
     "stars": 1,
-    "commits": 1198,
+    "commits": 1203,
     "lang": "Rust",
     "url": "https://github.com/kojira/opencrab",
     "live": null
@@ -414,7 +414,7 @@ window.REPOS = [
     "description": null,
     "date": "2023-02-23",
     "stars": 1,
-    "commits": 1381,
+    "commits": 1383,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/kojira",
     "live": null
@@ -454,7 +454,7 @@ window.REPOS = [
     "description": null,
     "date": "2017-03-24",
     "stars": 0,
-    "commits": 120,
+    "commits": 121,
     "lang": "HTML",
     "url": "https://github.com/kojira/kojira.github.io",
     "live": null
@@ -474,7 +474,7 @@ window.REPOS = [
 window.TOTALS = {
   "projects": 83,
   "stars": 96,
-  "commits": 7465,
+  "commits": 7479,
   "since": 2010
 }
 ;
