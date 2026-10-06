@@ -4,7 +4,7 @@ window.REPOS = [
     "description": "2D space gateway for opencrab agents (rooms, town, presence)",
     "date": "2026-10-04",
     "stars": 0,
-    "commits": 49,
+    "commits": 60,
     "lang": "Go",
     "url": "https://github.com/kojira/crab-town",
     "live": null
@@ -134,7 +134,7 @@ window.REPOS = [
     "description": "All-in-one event-ops platform — announce, recruit, run, score and award hackathons and any event, with real-time presentation and scoring.",
     "date": "2026-05-30",
     "stars": 0,
-    "commits": 1063,
+    "commits": 1069,
     "lang": "TypeScript",
     "url": "https://github.com/428lab/events",
     "live": "https://events.kojira.io"
@@ -424,7 +424,7 @@ window.REPOS = [
     "description": null,
     "date": "2023-02-23",
     "stars": 1,
-    "commits": 1389,
+    "commits": 1391,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/kojira",
     "live": null
@@ -464,7 +464,7 @@ window.REPOS = [
     "description": null,
     "date": "2017-03-24",
     "stars": 0,
-    "commits": 124,
+    "commits": 125,
     "lang": "HTML",
     "url": "https://github.com/kojira/kojira.github.io",
     "live": null
@@ -484,7 +484,7 @@ window.REPOS = [
 window.TOTALS = {
   "projects": 85,
   "stars": 96,
-  "commits": 7550,
+  "commits": 7570,
   "since": 2010
 }
 ;
