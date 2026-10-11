@@ -4,7 +4,7 @@ window.REPOS = [
     "description": "Gateway processes (Discord / Nostr / Web / CLI) for OpenCrab",
     "date": "2026-10-09",
     "stars": 0,
-    "commits": 209,
+    "commits": 216,
     "lang": "Rust",
     "url": "https://github.com/kojira/opencrab-gateways",
     "live": null
@@ -24,7 +24,7 @@ window.REPOS = [
     "description": null,
     "date": "2026-10-03",
     "stars": 1,
-    "commits": 20,
+    "commits": 22,
     "lang": "HTML",
     "url": "https://github.com/kojira/relay-stats",
     "live": null
@@ -154,7 +154,7 @@ window.REPOS = [
     "description": "All-in-one event-ops platform — announce, recruit, run, score and award hackathons and any event, with real-time presentation and scoring.",
     "date": "2026-05-30",
     "stars": 0,
-    "commits": 1086,
+    "commits": 1089,
     "lang": "TypeScript",
     "url": "https://github.com/428lab/events",
     "live": "https://events.kojira.io"
@@ -433,7 +433,7 @@ window.REPOS = [
     "name": "nostr-chan",
     "description": null,
     "date": "2023-02-28",
-    "stars": 15,
+    "stars": 16,
     "commits": 335,
     "lang": "Rust",
     "url": "https://github.com/kojira/nostr-chan",
@@ -444,7 +444,7 @@ window.REPOS = [
     "description": null,
     "date": "2023-02-23",
     "stars": 1,
-    "commits": 1399,
+    "commits": 1401,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/kojira",
     "live": null
@@ -453,7 +453,7 @@ window.REPOS = [
     "name": "nostify",
     "description": null,
     "date": "2023-02-15",
-    "stars": 12,
+    "stars": 13,
     "commits": 52,
     "lang": "Python",
     "url": "https://github.com/kojira/nostify",
@@ -464,7 +464,7 @@ window.REPOS = [
     "description": "Shrine-themed web app that tracks members GitHub activity (Firebase auth + Firestore) and grants titles/achievements. A Yotsuya-lab project.",
     "date": "2021-11-25",
     "stars": 19,
-    "commits": 658,
+    "commits": 661,
     "lang": "JavaScript",
     "url": "https://github.com/428lab/debug-shrine",
     "live": "https://d-shrine.jp"
@@ -484,7 +484,7 @@ window.REPOS = [
     "description": null,
     "date": "2017-03-24",
     "stars": 0,
-    "commits": 129,
+    "commits": 130,
     "lang": "HTML",
     "url": "https://github.com/kojira/kojira.github.io",
     "live": null
@@ -503,8 +503,8 @@ window.REPOS = [
 ;
 window.TOTALS = {
   "projects": 86,
-  "stars": 97,
-  "commits": 7834,
+  "stars": 99,
+  "commits": 7852,
   "since": 2010
 }
 ;
