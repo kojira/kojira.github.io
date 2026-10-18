@@ -4,7 +4,7 @@ window.REPOS = [
     "description": "Gateway processes (Discord / Nostr / Web / CLI) for OpenCrab",
     "date": "2026-10-09",
     "stars": 0,
-    "commits": 235,
+    "commits": 242,
     "lang": "Rust",
     "url": "https://github.com/kojira/opencrab-gateways",
     "live": null
@@ -24,7 +24,7 @@ window.REPOS = [
     "description": null,
     "date": "2026-10-03",
     "stars": 1,
-    "commits": 24,
+    "commits": 47,
     "lang": "HTML",
     "url": "https://github.com/kojira/relay-stats",
     "live": null
@@ -84,7 +84,7 @@ window.REPOS = [
     "description": "Sanitized OpenCrab repository",
     "date": "2026-06-28",
     "stars": 1,
-    "commits": 1227,
+    "commits": 1233,
     "lang": "Rust",
     "url": "https://github.com/kojira/opencrab",
     "live": null
@@ -444,7 +444,7 @@ window.REPOS = [
     "description": null,
     "date": "2023-02-23",
     "stars": 1,
-    "commits": 1413,
+    "commits": 1415,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/kojira",
     "live": null
@@ -484,7 +484,7 @@ window.REPOS = [
     "description": null,
     "date": "2017-03-24",
     "stars": 0,
-    "commits": 135,
+    "commits": 136,
     "lang": "HTML",
     "url": "https://github.com/kojira/kojira.github.io",
     "live": null
@@ -504,7 +504,7 @@ window.REPOS = [
 window.TOTALS = {
   "projects": 86,
   "stars": 99,
-  "commits": 7925,
+  "commits": 7964,
   "since": 2010
 }
 ;
