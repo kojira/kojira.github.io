@@ -4,7 +4,7 @@ window.REPOS = [
     "description": "Gateway processes (Discord / Nostr / Web / CLI) for OpenCrab",
     "date": "2026-10-09",
     "stars": 0,
-    "commits": 242,
+    "commits": 243,
     "lang": "Rust",
     "url": "https://github.com/kojira/opencrab-gateways",
     "live": null
@@ -84,7 +84,7 @@ window.REPOS = [
     "description": "Sanitized OpenCrab repository",
     "date": "2026-06-28",
     "stars": 1,
-    "commits": 1233,
+    "commits": 1234,
     "lang": "Rust",
     "url": "https://github.com/kojira/opencrab",
     "live": null
@@ -154,7 +154,7 @@ window.REPOS = [
     "description": "All-in-one event-ops platform — announce, recruit, run, score and award hackathons and any event, with real-time presentation and scoring.",
     "date": "2026-05-30",
     "stars": 0,
-    "commits": 1099,
+    "commits": 1103,
     "lang": "TypeScript",
     "url": "https://github.com/428lab/events",
     "live": "https://events.kojira.io"
@@ -184,7 +184,7 @@ window.REPOS = [
     "description": "OpenAI-compatible proxy for Anthropic Claude via OAuth (hermit crab borrows the shell)",
     "date": "2026-03-21",
     "stars": 2,
-    "commits": 61,
+    "commits": 63,
     "lang": "TypeScript",
     "url": "https://github.com/kojira/hermit-shell",
     "live": null
@@ -444,7 +444,7 @@ window.REPOS = [
     "description": null,
     "date": "2023-02-23",
     "stars": 1,
-    "commits": 1417,
+    "commits": 1422,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/kojira",
     "live": null
@@ -464,7 +464,7 @@ window.REPOS = [
     "description": "Shrine-themed web app that tracks members GitHub activity (Firebase auth + Firestore) and grants titles/achievements. A Yotsuya-lab project.",
     "date": "2021-11-25",
     "stars": 19,
-    "commits": 662,
+    "commits": 664,
     "lang": "JavaScript",
     "url": "https://github.com/428lab/debug-shrine",
     "live": "https://d-shrine.jp"
@@ -484,7 +484,7 @@ window.REPOS = [
     "description": null,
     "date": "2017-03-24",
     "stars": 0,
-    "commits": 137,
+    "commits": 138,
     "lang": "HTML",
     "url": "https://github.com/kojira/kojira.github.io",
     "live": null
@@ -502,9 +502,9 @@ window.REPOS = [
 ]
 ;
 window.TOTALS = {
-  "projects": 86,
+  "projects": 87,
   "stars": 99,
-  "commits": 7967,
+  "commits": 7985,
   "since": 2010
 }
 ;
