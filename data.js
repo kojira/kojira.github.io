@@ -1,10 +1,20 @@
 window.REPOS = [
   {
+    "name": "nmesh",
+    "description": "Mesh VPN: Nostr for discovery, WireGuard for data",
+    "date": "2026-10-24",
+    "stars": 0,
+    "commits": 5,
+    "lang": "Go",
+    "url": "https://github.com/kojira/nmesh",
+    "live": null
+  },
+  {
     "name": "opencrab-gateways",
     "description": "Gateway processes (Discord / Nostr / Web / CLI) for OpenCrab",
     "date": "2026-10-09",
     "stars": 0,
-    "commits": 243,
+    "commits": 252,
     "lang": "Rust",
     "url": "https://github.com/kojira/opencrab-gateways",
     "live": null
@@ -81,10 +91,10 @@ window.REPOS = [
   },
   {
     "name": "opencrab",
-    "description": "Sanitized OpenCrab repository",
+    "description": "An autonomous AI agent framework built in Rust.",
     "date": "2026-06-28",
     "stars": 1,
-    "commits": 1234,
+    "commits": 1238,
     "lang": "Rust",
     "url": "https://github.com/kojira/opencrab",
     "live": null
@@ -154,7 +164,7 @@ window.REPOS = [
     "description": "All-in-one event-ops platform — announce, recruit, run, score and award hackathons and any event, with real-time presentation and scoring.",
     "date": "2026-05-30",
     "stars": 0,
-    "commits": 1103,
+    "commits": 1106,
     "lang": "TypeScript",
     "url": "https://github.com/428lab/events",
     "live": "https://events.kojira.io"
@@ -184,7 +194,7 @@ window.REPOS = [
     "description": "OpenAI-compatible proxy for Anthropic Claude via OAuth (hermit crab borrows the shell)",
     "date": "2026-03-21",
     "stars": 2,
-    "commits": 63,
+    "commits": 68,
     "lang": "TypeScript",
     "url": "https://github.com/kojira/hermit-shell",
     "live": null
@@ -444,7 +454,7 @@ window.REPOS = [
     "description": null,
     "date": "2023-02-23",
     "stars": 1,
-    "commits": 1423,
+    "commits": 1427,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/kojira",
     "live": null
@@ -464,7 +474,7 @@ window.REPOS = [
     "description": "Shrine-themed web app that tracks members GitHub activity (Firebase auth + Firestore) and grants titles/achievements. A Yotsuya-lab project.",
     "date": "2021-11-25",
     "stars": 19,
-    "commits": 664,
+    "commits": 668,
     "lang": "JavaScript",
     "url": "https://github.com/428lab/debug-shrine",
     "live": "https://d-shrine.jp"
@@ -484,7 +494,7 @@ window.REPOS = [
     "description": null,
     "date": "2017-03-24",
     "stars": 0,
-    "commits": 139,
+    "commits": 140,
     "lang": "HTML",
     "url": "https://github.com/kojira/kojira.github.io",
     "live": null
@@ -502,9 +512,9 @@ window.REPOS = [
 ]
 ;
 window.TOTALS = {
-  "projects": 87,
+  "projects": 88,
   "stars": 99,
-  "commits": 8309,
+  "commits": 8344,
   "since": 2010
 }
 ;
