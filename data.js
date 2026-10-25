@@ -1,5 +1,15 @@
 window.REPOS = [
   {
+    "name": "fuzzy-flight-lab",
+    "description": "ブラウザで触れるファジーモジュール階層と遺伝的最適化の教育用デモ",
+    "date": "2026-10-25",
+    "stars": 0,
+    "commits": 4,
+    "lang": "JavaScript",
+    "url": "https://github.com/kojira/fuzzy-flight-lab",
+    "live": null
+  },
+  {
     "name": "nmesh",
     "description": "Mesh VPN: Nostr for discovery, WireGuard for data",
     "date": "2026-10-24",
@@ -14,7 +24,7 @@ window.REPOS = [
     "description": "Gateway processes (Discord / Nostr / Web / CLI) for OpenCrab",
     "date": "2026-10-09",
     "stars": 0,
-    "commits": 252,
+    "commits": 254,
     "lang": "Rust",
     "url": "https://github.com/kojira/opencrab-gateways",
     "live": null
@@ -24,7 +34,7 @@ window.REPOS = [
     "description": "2D space gateway for opencrab agents (rooms, town, presence)",
     "date": "2026-10-04",
     "stars": 0,
-    "commits": 64,
+    "commits": 66,
     "lang": "Go",
     "url": "https://github.com/kojira/crab-town",
     "live": null
@@ -44,7 +54,7 @@ window.REPOS = [
     "description": "View and operate Mac windows from an iPhone over Tailscale: WebRTC video, trackpad-style input, special keys, quick window switching",
     "date": "2026-09-28",
     "stars": 1,
-    "commits": 172,
+    "commits": 177,
     "lang": "Swift",
     "url": "https://github.com/kojira/mac-window-remote",
     "live": null
@@ -94,7 +104,7 @@ window.REPOS = [
     "description": "An autonomous AI agent framework built in Rust.",
     "date": "2026-06-28",
     "stars": 1,
-    "commits": 1238,
+    "commits": 1240,
     "lang": "Rust",
     "url": "https://github.com/kojira/opencrab",
     "live": null
@@ -134,7 +144,7 @@ window.REPOS = [
     "description": "Nostr 脳内メーカー — visualize a Nostr author's last 7 days of posts as a brain-maker-style image (static, client-side, GitHub Pages)",
     "date": "2026-06-12",
     "stars": 0,
-    "commits": 25,
+    "commits": 28,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/nostr-brainmaker",
     "live": "https://kojira.github.io/nostr-brainmaker/"
@@ -154,7 +164,7 @@ window.REPOS = [
     "description": null,
     "date": "2026-06-08",
     "stars": 0,
-    "commits": 23,
+    "commits": 26,
     "lang": "TypeScript",
     "url": "https://github.com/kojira/nostr-haijin-checker",
     "live": "https://kojira.github.io/nostr-haijin-checker/"
@@ -164,7 +174,7 @@ window.REPOS = [
     "description": "All-in-one event-ops platform — announce, recruit, run, score and award hackathons and any event, with real-time presentation and scoring.",
     "date": "2026-05-30",
     "stars": 0,
-    "commits": 1106,
+    "commits": 1110,
     "lang": "TypeScript",
     "url": "https://github.com/428lab/events",
     "live": "https://events.kojira.io"
@@ -184,7 +194,7 @@ window.REPOS = [
     "description": "Bluesky の投稿からジョブとステータスを可視化し、毎日のクエストで目指す姿に近づく Web クライアント。AI 推論は端末内 (Gemini Nano / ONNX) で完結。",
     "date": "2026-04-21",
     "stars": 1,
-    "commits": 810,
+    "commits": 814,
     "lang": "TypeScript",
     "url": "https://github.com/kojira/aozoraquest",
     "live": "https://aozoraquest.app"
@@ -234,7 +244,7 @@ window.REPOS = [
     "description": "VS Code extension: full remote development over Mosh (Mobile Shell) - survives network drops and IP changes",
     "date": "2026-02-21",
     "stars": 0,
-    "commits": 8,
+    "commits": 10,
     "lang": "TypeScript",
     "url": "https://github.com/kojira/vscode-remote-mosh",
     "live": null
@@ -274,7 +284,7 @@ window.REPOS = [
     "description": "A Nostr CLI tool built by AI agent のすたろう ⚡ Written in Rust.",
     "date": "2026-02-08",
     "stars": 0,
-    "commits": 37,
+    "commits": 43,
     "lang": "Rust",
     "url": "https://github.com/kojira/nostaro",
     "live": null
@@ -284,7 +294,7 @@ window.REPOS = [
     "description": "Hackathon theme generator & real-time rating system using Nostr + GitHub Pages + Cloudflare Workers",
     "date": "2026-01-31",
     "stars": 0,
-    "commits": 5,
+    "commits": 8,
     "lang": "TypeScript",
     "url": "https://github.com/kojira/vibe-hackathon",
     "live": null
@@ -314,7 +324,7 @@ window.REPOS = [
     "description": null,
     "date": "2025-12-26",
     "stars": 4,
-    "commits": 202,
+    "commits": 205,
     "lang": "TypeScript",
     "url": "https://github.com/kojira/NostrDraw",
     "live": "https://kojira.github.io/NostrDraw/"
@@ -324,7 +334,7 @@ window.REPOS = [
     "description": null,
     "date": "2025-12-05",
     "stars": 3,
-    "commits": 32,
+    "commits": 35,
     "lang": "TypeScript",
     "url": "https://github.com/kojira/NostrYears",
     "live": "https://kojira.github.io/NostrYears/"
@@ -334,7 +344,7 @@ window.REPOS = [
     "description": null,
     "date": "2025-11-28",
     "stars": 1,
-    "commits": 32,
+    "commits": 36,
     "lang": "Python",
     "url": "https://github.com/kojira/vllm_gb10",
     "live": null
@@ -344,7 +354,7 @@ window.REPOS = [
     "description": null,
     "date": "2025-10-19",
     "stars": 1,
-    "commits": 12,
+    "commits": 15,
     "lang": "TypeScript",
     "url": "https://github.com/kojira/NostrAnalytics",
     "live": "https://kojira.github.io/NostrAnalytics/"
@@ -364,7 +374,7 @@ window.REPOS = [
     "description": null,
     "date": "2025-10-11",
     "stars": 0,
-    "commits": 39,
+    "commits": 42,
     "lang": "TypeScript",
     "url": "https://github.com/kojira/NostrShrine",
     "live": "https://kojira.github.io/NostrShrine/"
@@ -384,7 +394,7 @@ window.REPOS = [
     "description": null,
     "date": "2025-03-09",
     "stars": 3,
-    "commits": 116,
+    "commits": 119,
     "lang": "TypeScript",
     "url": "https://github.com/kojira/BottleMessenger",
     "live": null
@@ -394,7 +404,7 @@ window.REPOS = [
     "description": null,
     "date": "2025-03-07",
     "stars": 5,
-    "commits": 33,
+    "commits": 37,
     "lang": "TypeScript",
     "url": "https://github.com/kojira/NostrActivity",
     "live": null
@@ -404,7 +414,7 @@ window.REPOS = [
     "description": null,
     "date": "2025-02-12",
     "stars": 0,
-    "commits": 215,
+    "commits": 219,
     "lang": "TypeScript",
     "url": "https://github.com/kojira/repliNostr",
     "live": null
@@ -454,7 +464,7 @@ window.REPOS = [
     "description": null,
     "date": "2023-02-23",
     "stars": 1,
-    "commits": 1427,
+    "commits": 1432,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/kojira",
     "live": null
@@ -474,7 +484,7 @@ window.REPOS = [
     "description": "Shrine-themed web app that tracks members GitHub activity (Firebase auth + Firestore) and grants titles/achievements. A Yotsuya-lab project.",
     "date": "2021-11-25",
     "stars": 19,
-    "commits": 668,
+    "commits": 670,
     "lang": "JavaScript",
     "url": "https://github.com/428lab/debug-shrine",
     "live": "https://d-shrine.jp"
@@ -494,7 +504,7 @@ window.REPOS = [
     "description": null,
     "date": "2017-03-24",
     "stars": 0,
-    "commits": 140,
+    "commits": 141,
     "lang": "HTML",
     "url": "https://github.com/kojira/kojira.github.io",
     "live": null
@@ -512,9 +522,9 @@ window.REPOS = [
 ]
 ;
 window.TOTALS = {
-  "projects": 88,
+  "projects": 89,
   "stars": 99,
-  "commits": 8344,
+  "commits": 8425,
   "since": 2010
 }
 ;
