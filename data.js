@@ -1,5 +1,15 @@
 window.REPOS = [
   {
+    "name": "zen-tts-http",
+    "description": "HTTP server for ZEN-TTS (Japanese TTS) with a settings page",
+    "date": "2026-10-31",
+    "stars": 0,
+    "commits": 13,
+    "lang": "JavaScript",
+    "url": "https://github.com/kojira/zen-tts-http",
+    "live": null
+  },
+  {
     "name": "fuzzy-flight-lab",
     "description": "ブラウザで触れるファジーモジュール階層と遺伝的最適化の教育用デモ",
     "date": "2026-10-25",
@@ -24,7 +34,7 @@ window.REPOS = [
     "description": "Gateway processes (Discord / Nostr / Web / CLI) for OpenCrab",
     "date": "2026-10-09",
     "stars": 0,
-    "commits": 335,
+    "commits": 354,
     "lang": "Rust",
     "url": "https://github.com/kojira/opencrab-gateways",
     "live": null
@@ -464,7 +474,7 @@ window.REPOS = [
     "description": null,
     "date": "2023-02-23",
     "stars": 1,
-    "commits": 1441,
+    "commits": 1443,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/kojira",
     "live": null
@@ -504,7 +514,7 @@ window.REPOS = [
     "description": null,
     "date": "2017-03-24",
     "stars": 0,
-    "commits": 143,
+    "commits": 144,
     "lang": "HTML",
     "url": "https://github.com/kojira/kojira.github.io",
     "live": null
@@ -522,9 +532,9 @@ window.REPOS = [
 ]
 ;
 window.TOTALS = {
-  "projects": 89,
+  "projects": 90,
   "stars": 99,
-  "commits": 8571,
+  "commits": 8606,
   "since": 2010
 }
 ;
