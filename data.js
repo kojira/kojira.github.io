@@ -54,7 +54,7 @@ window.REPOS = [
     "description": "Gateway processes (Discord / Nostr / Web / CLI) for OpenCrab",
     "date": "2026-10-09",
     "stars": 0,
-    "commits": 366,
+    "commits": 374,
     "lang": "Rust",
     "url": "https://github.com/kojira/opencrab-gateways",
     "live": null
@@ -73,7 +73,7 @@ window.REPOS = [
     "name": "relay-stats",
     "description": null,
     "date": "2026-10-03",
-    "stars": 1,
+    "stars": 2,
     "commits": 54,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/relay-stats",
@@ -134,7 +134,7 @@ window.REPOS = [
     "description": "An autonomous AI agent framework built in Rust.",
     "date": "2026-06-28",
     "stars": 1,
-    "commits": 1289,
+    "commits": 1295,
     "lang": "Rust",
     "url": "https://github.com/kojira/opencrab",
     "live": null
@@ -204,7 +204,7 @@ window.REPOS = [
     "description": "All-in-one event-ops platform — announce, recruit, run, score and award hackathons and any event, with real-time presentation and scoring.",
     "date": "2026-05-30",
     "stars": 0,
-    "commits": 1125,
+    "commits": 1128,
     "lang": "TypeScript",
     "url": "https://github.com/428lab/events",
     "live": "https://events.kojira.io"
@@ -534,7 +534,7 @@ window.REPOS = [
     "description": null,
     "date": "2017-03-24",
     "stars": 0,
-    "commits": 148,
+    "commits": 149,
     "lang": "HTML",
     "url": "https://github.com/kojira/kojira.github.io",
     "live": null
@@ -553,8 +553,8 @@ window.REPOS = [
 ;
 window.TOTALS = {
   "projects": 92,
-  "stars": 99,
-  "commits": 8658,
+  "stars": 100,
+  "commits": 8676,
   "since": 2010
 }
 ;
