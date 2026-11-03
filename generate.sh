@@ -35,10 +35,14 @@ HIDE_TOPIC="no-portfolio"
 EXCLUDE='[]'
 
 echo "Fetching own repos for $USER ..."
-gh api graphql -f query='
-query($cursor: String, $login: String!) {
+own_tmp=$(mktemp -d "${TMPDIR:-/tmp}/portfolio-own.XXXXXX")
+trap 'rm -rf -- "$own_tmp"' EXIT
+for own_attempt in 1 2 3; do
+  # gh --paginate advances only the documented $endCursor variable.
+  if gh api graphql -f query='
+query($endCursor: String, $login: String!) {
   user(login: $login) {
-    repositories(first: 100, after: $cursor, privacy: PUBLIC, ownerAffiliations: OWNER, isFork: false, orderBy: {field: CREATED_AT, direction: DESC}) {
+    repositories(first: 20, after: $endCursor, privacy: PUBLIC, ownerAffiliations: OWNER, isFork: false, orderBy: {field: CREATED_AT, direction: DESC}) {
       pageInfo { hasNextPage endCursor }
       nodes {
         name description createdAt stargazerCount url homepageUrl isArchived
@@ -49,7 +53,19 @@ query($cursor: String, $login: String!) {
     }
   }
 }' -F login="$USER" --paginate --slurp \
-| jq '[.[].data.user.repositories.nodes[]]
+    > "$own_tmp/pages.json" 2> "$own_tmp/error.log"; then
+    break
+  fi
+  cat "$own_tmp/error.log" >&2
+  if [[ "$own_attempt" -eq 3 ]] || ! grep -Eq '^gh: (HTTP 5[0-9]{2}|.*\(HTTP 5[0-9]{2}\))$' "$own_tmp/error.log"; then
+    echo "Failed to fetch own repositories (attempt $own_attempt/3)." >&2
+    exit 1
+  fi
+  echo "Retrying own repositories in $((own_attempt * 2)) seconds ..." >&2
+  sleep "$((own_attempt * 2))"
+done
+# Parse only a complete successful attempt; each retry truncates partial output.
+jq '[.[].data.user.repositories.nodes[]]
     | map({
         name, description,
         date: .createdAt[0:10],
@@ -59,8 +75,10 @@ query($cursor: String, $login: String!) {
         url,
         topics: [.repositoryTopics.nodes[].topic.name],
         live: (if (.homepageUrl // "") != "" then .homepageUrl else null end)
-      })' \
+      })' "$own_tmp/pages.json" \
 > /tmp/_own_all.json
+rm -rf -- "$own_tmp"
+trap - EXIT
 echo "  own (all public, non-fork): $(jq length /tmp/_own_all.json)"
 
 # 表示用は「notable」だけに絞り込む（タイムラインのカード）。
