@@ -534,7 +534,7 @@ window.REPOS = [
     "description": null,
     "date": "2017-03-24",
     "stars": 0,
-    "commits": 145,
+    "commits": 148,
     "lang": "HTML",
     "url": "https://github.com/kojira/kojira.github.io",
     "live": null
@@ -554,7 +554,7 @@ window.REPOS = [
 window.TOTALS = {
   "projects": 92,
   "stars": 99,
-  "commits": 8655,
+  "commits": 8658,
   "since": 2010
 }
 ;
