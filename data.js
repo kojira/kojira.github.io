@@ -54,7 +54,7 @@ window.REPOS = [
     "description": "Gateway processes (Discord / Nostr / Web / CLI) for OpenCrab",
     "date": "2026-10-09",
     "stars": 0,
-    "commits": 374,
+    "commits": 378,
     "lang": "Rust",
     "url": "https://github.com/kojira/opencrab-gateways",
     "live": null
@@ -134,7 +134,7 @@ window.REPOS = [
     "description": "An autonomous AI agent framework built in Rust.",
     "date": "2026-06-28",
     "stars": 1,
-    "commits": 1295,
+    "commits": 1302,
     "lang": "Rust",
     "url": "https://github.com/kojira/opencrab",
     "live": null
@@ -144,7 +144,7 @@ window.REPOS = [
     "description": "A strfry writePolicy plugin: per-pubkey rate limiting with auto-ban, kind-class aware (Rust)",
     "date": "2026-06-18",
     "stars": 0,
-    "commits": 9,
+    "commits": 21,
     "lang": "Rust",
     "url": "https://github.com/kojira/strfry-ratelimit",
     "live": null
@@ -204,7 +204,7 @@ window.REPOS = [
     "description": "All-in-one event-ops platform — announce, recruit, run, score and award hackathons and any event, with real-time presentation and scoring.",
     "date": "2026-05-30",
     "stars": 0,
-    "commits": 1128,
+    "commits": 1133,
     "lang": "TypeScript",
     "url": "https://github.com/428lab/events",
     "live": "https://events.kojira.io"
@@ -494,7 +494,7 @@ window.REPOS = [
     "description": null,
     "date": "2023-02-23",
     "stars": 1,
-    "commits": 1449,
+    "commits": 1451,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/kojira",
     "live": null
@@ -534,7 +534,7 @@ window.REPOS = [
     "description": null,
     "date": "2017-03-24",
     "stars": 0,
-    "commits": 149,
+    "commits": 150,
     "lang": "HTML",
     "url": "https://github.com/kojira/kojira.github.io",
     "live": null
@@ -554,7 +554,7 @@ window.REPOS = [
 window.TOTALS = {
   "projects": 92,
   "stars": 100,
-  "commits": 8676,
+  "commits": 8707,
   "since": 2010
 }
 ;
