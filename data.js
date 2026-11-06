@@ -4,7 +4,7 @@ window.REPOS = [
     "description": "ZEN-TTS 用の voice モデル（.ztm）。オープンソースのプロジェクトで使えます / Voice models for ZEN-TTS",
     "date": "2026-11-01",
     "stars": 0,
-    "commits": 1,
+    "commits": 2,
     "lang": null,
     "url": "https://github.com/kojira/zen-tts-models",
     "live": "https://github.com/zenryokukikai/zen-tts"
@@ -14,7 +14,7 @@ window.REPOS = [
     "description": "OpenCrab gateway for Bluesky (Go)",
     "date": "2026-11-01",
     "stars": 0,
-    "commits": 10,
+    "commits": 16,
     "lang": "Go",
     "url": "https://github.com/kojira/opencrab-bluesky-gateway",
     "live": null
@@ -54,7 +54,7 @@ window.REPOS = [
     "description": "Gateway processes (Discord / Nostr / Web / CLI) for OpenCrab",
     "date": "2026-10-09",
     "stars": 0,
-    "commits": 380,
+    "commits": 390,
     "lang": "Rust",
     "url": "https://github.com/kojira/opencrab-gateways",
     "live": null
@@ -84,7 +84,7 @@ window.REPOS = [
     "description": "View and operate Mac windows from an iPhone over Tailscale: WebRTC video, trackpad-style input, special keys, quick window switching",
     "date": "2026-09-28",
     "stars": 1,
-    "commits": 177,
+    "commits": 179,
     "lang": "Swift",
     "url": "https://github.com/kojira/mac-window-remote",
     "live": null
@@ -134,7 +134,7 @@ window.REPOS = [
     "description": "An autonomous AI agent framework built in Rust.",
     "date": "2026-06-28",
     "stars": 1,
-    "commits": 1305,
+    "commits": 1313,
     "lang": "Rust",
     "url": "https://github.com/kojira/opencrab",
     "live": null
@@ -494,7 +494,7 @@ window.REPOS = [
     "description": null,
     "date": "2023-02-23",
     "stars": 1,
-    "commits": 1453,
+    "commits": 1455,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/kojira",
     "live": null
@@ -514,7 +514,7 @@ window.REPOS = [
     "description": "Shrine-themed web app that tracks members GitHub activity (Firebase auth + Firestore) and grants titles/achievements. A Yotsuya-lab project.",
     "date": "2021-11-25",
     "stars": 19,
-    "commits": 671,
+    "commits": 672,
     "lang": "JavaScript",
     "url": "https://github.com/428lab/debug-shrine",
     "live": "https://d-shrine.jp"
@@ -534,7 +534,7 @@ window.REPOS = [
     "description": null,
     "date": "2017-03-24",
     "stars": 0,
-    "commits": 151,
+    "commits": 152,
     "lang": "HTML",
     "url": "https://github.com/kojira/kojira.github.io",
     "live": null
@@ -554,7 +554,7 @@ window.REPOS = [
 window.TOTALS = {
   "projects": 92,
   "stars": 100,
-  "commits": 8718,
+  "commits": 8749,
   "since": 2010
 }
 ;
