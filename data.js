@@ -4,7 +4,7 @@ window.REPOS = [
     "description": "ZEN-TTS 用の voice モデル（.ztm）。オープンソースのプロジェクトで使えます / Voice models for ZEN-TTS",
     "date": "2026-11-01",
     "stars": 0,
-    "commits": 2,
+    "commits": 3,
     "lang": null,
     "url": "https://github.com/kojira/zen-tts-models",
     "live": "https://github.com/zenryokukikai/zen-tts"
@@ -494,7 +494,7 @@ window.REPOS = [
     "description": null,
     "date": "2023-02-23",
     "stars": 1,
-    "commits": 1455,
+    "commits": 1457,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/kojira",
     "live": null
@@ -534,7 +534,7 @@ window.REPOS = [
     "description": null,
     "date": "2017-03-24",
     "stars": 0,
-    "commits": 152,
+    "commits": 153,
     "lang": "HTML",
     "url": "https://github.com/kojira/kojira.github.io",
     "live": null
@@ -554,7 +554,7 @@ window.REPOS = [
 window.TOTALS = {
   "projects": 92,
   "stars": 100,
-  "commits": 8749,
+  "commits": 8753,
   "since": 2010
 }
 ;
