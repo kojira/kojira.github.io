@@ -234,7 +234,7 @@ window.REPOS = [
     "description": "OpenAI-compatible proxy for Anthropic Claude via OAuth (hermit crab borrows the shell)",
     "date": "2026-03-21",
     "stars": 2,
-    "commits": 80,
+    "commits": 82,
     "lang": "TypeScript",
     "url": "https://github.com/kojira/hermit-shell",
     "live": null
@@ -494,7 +494,7 @@ window.REPOS = [
     "description": null,
     "date": "2023-02-23",
     "stars": 1,
-    "commits": 1461,
+    "commits": 1463,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/kojira",
     "live": null
@@ -534,7 +534,7 @@ window.REPOS = [
     "description": null,
     "date": "2017-03-24",
     "stars": 0,
-    "commits": 155,
+    "commits": 156,
     "lang": "HTML",
     "url": "https://github.com/kojira/kojira.github.io",
     "live": null
@@ -554,7 +554,7 @@ window.REPOS = [
 window.TOTALS = {
   "projects": 92,
   "stars": 100,
-  "commits": 8845,
+  "commits": 8850,
   "since": 2010
 }
 ;
