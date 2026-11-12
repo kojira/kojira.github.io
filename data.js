@@ -14,7 +14,7 @@ window.REPOS = [
     "description": "OpenCrab gateway for Bluesky (Go)",
     "date": "2026-11-01",
     "stars": 0,
-    "commits": 16,
+    "commits": 24,
     "lang": "Go",
     "url": "https://github.com/kojira/opencrab-bluesky-gateway",
     "live": null
@@ -204,7 +204,7 @@ window.REPOS = [
     "description": "All-in-one event-ops platform — announce, recruit, run, score and award hackathons and any event, with real-time presentation and scoring.",
     "date": "2026-05-30",
     "stars": 0,
-    "commits": 1134,
+    "commits": 1138,
     "lang": "TypeScript",
     "url": "https://github.com/428lab/events",
     "live": "https://events.kojira.io"
@@ -494,7 +494,7 @@ window.REPOS = [
     "description": null,
     "date": "2023-02-23",
     "stars": 1,
-    "commits": 1465,
+    "commits": 1467,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/kojira",
     "live": null
@@ -534,7 +534,7 @@ window.REPOS = [
     "description": null,
     "date": "2017-03-24",
     "stars": 0,
-    "commits": 157,
+    "commits": 158,
     "lang": "HTML",
     "url": "https://github.com/kojira/kojira.github.io",
     "live": null
@@ -554,7 +554,7 @@ window.REPOS = [
 window.TOTALS = {
   "projects": 92,
   "stars": 100,
-  "commits": 8853,
+  "commits": 8868,
   "since": 2010
 }
 ;
