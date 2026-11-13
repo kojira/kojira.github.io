@@ -1,5 +1,15 @@
 window.REPOS = [
   {
+    "name": "osint-radar",
+    "description": "A configurable OSINT dashboard with Japanese briefings, prioritization, and source previews.",
+    "date": "2026-11-13",
+    "stars": 0,
+    "commits": 3,
+    "lang": "TypeScript",
+    "url": "https://github.com/kojira/osint-radar",
+    "live": null
+  },
+  {
     "name": "zen-tts-models",
     "description": "ZEN-TTS 用の voice モデル（.ztm）。オープンソースのプロジェクトで使えます / Voice models for ZEN-TTS",
     "date": "2026-11-01",
@@ -204,7 +214,7 @@ window.REPOS = [
     "description": "All-in-one event-ops platform — announce, recruit, run, score and award hackathons and any event, with real-time presentation and scoring.",
     "date": "2026-05-30",
     "stars": 0,
-    "commits": 1138,
+    "commits": 1141,
     "lang": "TypeScript",
     "url": "https://github.com/428lab/events",
     "live": "https://events.kojira.io"
@@ -494,7 +504,7 @@ window.REPOS = [
     "description": null,
     "date": "2023-02-23",
     "stars": 1,
-    "commits": 1467,
+    "commits": 1469,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/kojira",
     "live": null
@@ -534,7 +544,7 @@ window.REPOS = [
     "description": null,
     "date": "2017-03-24",
     "stars": 0,
-    "commits": 158,
+    "commits": 159,
     "lang": "HTML",
     "url": "https://github.com/kojira/kojira.github.io",
     "live": null
@@ -552,9 +562,9 @@ window.REPOS = [
 ]
 ;
 window.TOTALS = {
-  "projects": 92,
+  "projects": 93,
   "stars": 100,
-  "commits": 8868,
+  "commits": 8877,
   "since": 2010
 }
 ;
