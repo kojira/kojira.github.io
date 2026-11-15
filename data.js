@@ -1,10 +1,20 @@
 window.REPOS = [
   {
+    "name": "bluesky-talking",
+    "description": "おしゃべりブルスコちゃん",
+    "date": "2026-11-15",
+    "stars": 0,
+    "commits": 8,
+    "lang": "JavaScript",
+    "url": "https://github.com/kojira/bluesky-talking",
+    "live": null
+  },
+  {
     "name": "reaction-only-nostr",
     "description": null,
     "date": "2026-11-14",
     "stars": 0,
-    "commits": 45,
+    "commits": 47,
     "lang": "Go",
     "url": "https://github.com/kojira/reaction-only-nostr",
     "live": null
@@ -34,7 +44,7 @@ window.REPOS = [
     "description": "OpenCrab gateway for Bluesky (Go)",
     "date": "2026-11-01",
     "stars": 0,
-    "commits": 24,
+    "commits": 26,
     "lang": "Go",
     "url": "https://github.com/kojira/opencrab-bluesky-gateway",
     "live": null
@@ -224,7 +234,7 @@ window.REPOS = [
     "description": "All-in-one event-ops platform — announce, recruit, run, score and award hackathons and any event, with real-time presentation and scoring.",
     "date": "2026-05-30",
     "stars": 0,
-    "commits": 1148,
+    "commits": 1152,
     "lang": "TypeScript",
     "url": "https://github.com/428lab/events",
     "live": "https://events.kojira.io"
@@ -514,7 +524,7 @@ window.REPOS = [
     "description": null,
     "date": "2023-02-23",
     "stars": 1,
-    "commits": 1471,
+    "commits": 1473,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/kojira",
     "live": null
@@ -554,7 +564,7 @@ window.REPOS = [
     "description": null,
     "date": "2017-03-24",
     "stars": 0,
-    "commits": 160,
+    "commits": 161,
     "lang": "HTML",
     "url": "https://github.com/kojira/kojira.github.io",
     "live": null
@@ -572,9 +582,9 @@ window.REPOS = [
 ]
 ;
 window.TOTALS = {
-  "projects": 94,
+  "projects": 95,
   "stars": 100,
-  "commits": 8932,
+  "commits": 8951,
   "since": 2010
 }
 ;
