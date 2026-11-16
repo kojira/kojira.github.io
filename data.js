@@ -4,7 +4,7 @@ window.REPOS = [
     "description": "おしゃべりブルスコちゃん",
     "date": "2026-11-15",
     "stars": 0,
-    "commits": 8,
+    "commits": 28,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/bluesky-talking",
     "live": null
@@ -164,7 +164,7 @@ window.REPOS = [
     "description": "An autonomous AI agent framework built in Rust.",
     "date": "2026-06-28",
     "stars": 1,
-    "commits": 1315,
+    "commits": 1318,
     "lang": "Rust",
     "url": "https://github.com/kojira/opencrab",
     "live": null
@@ -524,7 +524,7 @@ window.REPOS = [
     "description": null,
     "date": "2023-02-23",
     "stars": 1,
-    "commits": 1473,
+    "commits": 1475,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/kojira",
     "live": null
@@ -564,7 +564,7 @@ window.REPOS = [
     "description": null,
     "date": "2017-03-24",
     "stars": 0,
-    "commits": 161,
+    "commits": 162,
     "lang": "HTML",
     "url": "https://github.com/kojira/kojira.github.io",
     "live": null
@@ -584,7 +584,7 @@ window.REPOS = [
 window.TOTALS = {
   "projects": 95,
   "stars": 100,
-  "commits": 8951,
+  "commits": 8977,
   "since": 2010
 }
 ;
