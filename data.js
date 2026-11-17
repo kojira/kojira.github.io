@@ -4,7 +4,7 @@ window.REPOS = [
     "description": "おしゃべりブルスコちゃん",
     "date": "2026-11-15",
     "stars": 0,
-    "commits": 28,
+    "commits": 29,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/bluesky-talking",
     "live": null
@@ -254,7 +254,7 @@ window.REPOS = [
     "description": "Bluesky の投稿からジョブとステータスを可視化し、毎日のクエストで目指す姿に近づく Web クライアント。AI 推論は端末内 (Gemini Nano / ONNX) で完結。",
     "date": "2026-04-21",
     "stars": 1,
-    "commits": 883,
+    "commits": 886,
     "lang": "TypeScript",
     "url": "https://github.com/kojira/aozoraquest",
     "live": "https://aozoraquest.app"
@@ -524,7 +524,7 @@ window.REPOS = [
     "description": null,
     "date": "2023-02-23",
     "stars": 1,
-    "commits": 1475,
+    "commits": 1477,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/kojira",
     "live": null
@@ -564,7 +564,7 @@ window.REPOS = [
     "description": null,
     "date": "2017-03-24",
     "stars": 0,
-    "commits": 162,
+    "commits": 163,
     "lang": "HTML",
     "url": "https://github.com/kojira/kojira.github.io",
     "live": null
@@ -584,7 +584,7 @@ window.REPOS = [
 window.TOTALS = {
   "projects": 95,
   "stars": 100,
-  "commits": 8977,
+  "commits": 8984,
   "since": 2010
 }
 ;
