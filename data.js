@@ -54,7 +54,7 @@ window.REPOS = [
     "description": "HTTP server for ZEN-TTS (Japanese TTS) with a settings page",
     "date": "2026-10-31",
     "stars": 0,
-    "commits": 15,
+    "commits": 18,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/zen-tts-http",
     "live": null
@@ -114,7 +114,7 @@ window.REPOS = [
     "description": "View and operate Mac windows from an iPhone over Tailscale: WebRTC video, trackpad-style input, special keys, quick window switching",
     "date": "2026-09-28",
     "stars": 1,
-    "commits": 179,
+    "commits": 183,
     "lang": "Swift",
     "url": "https://github.com/kojira/mac-window-remote",
     "live": null
@@ -234,7 +234,7 @@ window.REPOS = [
     "description": "All-in-one event-ops platform — announce, recruit, run, score and award hackathons and any event, with real-time presentation and scoring.",
     "date": "2026-05-30",
     "stars": 0,
-    "commits": 1152,
+    "commits": 1156,
     "lang": "TypeScript",
     "url": "https://github.com/428lab/events",
     "live": "https://events.kojira.io"
@@ -294,7 +294,7 @@ window.REPOS = [
     "description": "💡 Ideas, concepts, and design docs",
     "date": "2026-03-13",
     "stars": 0,
-    "commits": 6,
+    "commits": 7,
     "lang": null,
     "url": "https://github.com/kojira/idea-box",
     "live": null
@@ -524,7 +524,7 @@ window.REPOS = [
     "description": null,
     "date": "2023-02-23",
     "stars": 1,
-    "commits": 1479,
+    "commits": 1481,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/kojira",
     "live": null
@@ -564,7 +564,7 @@ window.REPOS = [
     "description": null,
     "date": "2017-03-24",
     "stars": 0,
-    "commits": 164,
+    "commits": 165,
     "lang": "HTML",
     "url": "https://github.com/kojira/kojira.github.io",
     "live": null
@@ -584,7 +584,7 @@ window.REPOS = [
 window.TOTALS = {
   "projects": 95,
   "stars": 100,
-  "commits": 9001,
+  "commits": 9016,
   "since": 2010
 }
 ;
