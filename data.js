@@ -104,7 +104,7 @@ window.REPOS = [
     "description": null,
     "date": "2026-10-03",
     "stars": 2,
-    "commits": 56,
+    "commits": 58,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/relay-stats",
     "live": null
@@ -114,7 +114,7 @@ window.REPOS = [
     "description": "View and operate Mac windows from an iPhone over Tailscale: WebRTC video, trackpad-style input, special keys, quick window switching",
     "date": "2026-09-28",
     "stars": 1,
-    "commits": 183,
+    "commits": 187,
     "lang": "Swift",
     "url": "https://github.com/kojira/mac-window-remote",
     "live": null
@@ -234,7 +234,7 @@ window.REPOS = [
     "description": "All-in-one event-ops platform — announce, recruit, run, score and award hackathons and any event, with real-time presentation and scoring.",
     "date": "2026-05-30",
     "stars": 0,
-    "commits": 1156,
+    "commits": 1158,
     "lang": "TypeScript",
     "url": "https://github.com/428lab/events",
     "live": "https://events.kojira.io"
@@ -524,7 +524,7 @@ window.REPOS = [
     "description": null,
     "date": "2023-02-23",
     "stars": 1,
-    "commits": 1481,
+    "commits": 1483,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/kojira",
     "live": null
@@ -564,7 +564,7 @@ window.REPOS = [
     "description": null,
     "date": "2017-03-24",
     "stars": 0,
-    "commits": 165,
+    "commits": 166,
     "lang": "HTML",
     "url": "https://github.com/kojira/kojira.github.io",
     "live": null
@@ -584,7 +584,7 @@ window.REPOS = [
 window.TOTALS = {
   "projects": 95,
   "stars": 100,
-  "commits": 9016,
+  "commits": 9027,
   "since": 2010
 }
 ;
