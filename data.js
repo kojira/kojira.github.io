@@ -84,7 +84,7 @@ window.REPOS = [
     "description": "Gateway processes (Discord / Nostr / Web / CLI) for OpenCrab",
     "date": "2026-10-09",
     "stars": 0,
-    "commits": 412,
+    "commits": 424,
     "lang": "Rust",
     "url": "https://github.com/kojira/opencrab-gateways",
     "live": null
@@ -104,7 +104,7 @@ window.REPOS = [
     "description": null,
     "date": "2026-10-03",
     "stars": 2,
-    "commits": 60,
+    "commits": 66,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/relay-stats",
     "live": null
@@ -114,7 +114,7 @@ window.REPOS = [
     "description": "View and operate Mac windows from an iPhone over Tailscale: WebRTC video, trackpad-style input, special keys, quick window switching",
     "date": "2026-09-28",
     "stars": 1,
-    "commits": 189,
+    "commits": 200,
     "lang": "Swift",
     "url": "https://github.com/kojira/mac-window-remote",
     "live": null
@@ -164,7 +164,7 @@ window.REPOS = [
     "description": "An autonomous AI agent framework built in Rust.",
     "date": "2026-06-28",
     "stars": 1,
-    "commits": 1351,
+    "commits": 1365,
     "lang": "Rust",
     "url": "https://github.com/kojira/opencrab",
     "live": null
@@ -234,7 +234,7 @@ window.REPOS = [
     "description": "All-in-one event-ops platform — announce, recruit, run, score and award hackathons and any event, with real-time presentation and scoring.",
     "date": "2026-05-30",
     "stars": 0,
-    "commits": 1167,
+    "commits": 1171,
     "lang": "TypeScript",
     "url": "https://github.com/428lab/events",
     "live": "https://events.kojira.io"
@@ -524,7 +524,7 @@ window.REPOS = [
     "description": null,
     "date": "2023-02-23",
     "stars": 1,
-    "commits": 1490,
+    "commits": 1492,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/kojira",
     "live": null
@@ -564,7 +564,7 @@ window.REPOS = [
     "description": null,
     "date": "2017-03-24",
     "stars": 0,
-    "commits": 170,
+    "commits": 171,
     "lang": "HTML",
     "url": "https://github.com/kojira/kojira.github.io",
     "live": null
@@ -584,7 +584,7 @@ window.REPOS = [
 window.TOTALS = {
   "projects": 95,
   "stars": 100,
-  "commits": 9098,
+  "commits": 9148,
   "since": 2010
 }
 ;
