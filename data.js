@@ -1,5 +1,25 @@
 window.REPOS = [
   {
+    "name": "nostr-yo",
+    "description": "Send Yo! over Nostr (kind 7117, NIP-07). Static TypeScript app on GitHub Pages.",
+    "date": "2026-11-27",
+    "stars": 0,
+    "commits": 21,
+    "lang": "JavaScript",
+    "url": "https://github.com/kojira/nostr-yo",
+    "live": null
+  },
+  {
+    "name": "shizuku-tune",
+    "description": "Analysis-based, natural-sounding vocal pitch correction Audio Unit for macOS (capture mode for Logic Pro, ARA for ARA hosts). AGPLv3.",
+    "date": "2026-11-26",
+    "stars": 0,
+    "commits": 12,
+    "lang": "C++",
+    "url": "https://github.com/kojira/shizuku-tune",
+    "live": null
+  },
+  {
     "name": "bluesky-talking",
     "description": "おしゃべりブルスコちゃん",
     "date": "2026-11-15",
@@ -234,7 +254,7 @@ window.REPOS = [
     "description": "All-in-one event-ops platform — announce, recruit, run, score and award hackathons and any event, with real-time presentation and scoring.",
     "date": "2026-05-30",
     "stars": 0,
-    "commits": 1173,
+    "commits": 1181,
     "lang": "TypeScript",
     "url": "https://github.com/428lab/events",
     "live": "https://events.kojira.io"
@@ -524,7 +544,7 @@ window.REPOS = [
     "description": null,
     "date": "2023-02-23",
     "stars": 1,
-    "commits": 1494,
+    "commits": 1496,
     "lang": "JavaScript",
     "url": "https://github.com/kojira/kojira",
     "live": null
@@ -564,7 +584,7 @@ window.REPOS = [
     "description": null,
     "date": "2017-03-24",
     "stars": 0,
-    "commits": 172,
+    "commits": 173,
     "lang": "HTML",
     "url": "https://github.com/kojira/kojira.github.io",
     "live": null
@@ -582,9 +602,9 @@ window.REPOS = [
 ]
 ;
 window.TOTALS = {
-  "projects": 95,
+  "projects": 97,
   "stars": 100,
-  "commits": 9153,
+  "commits": 9197,
   "since": 2010
 }
 ;
